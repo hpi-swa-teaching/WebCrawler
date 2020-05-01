@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfWebCrawler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfWebCrawler",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
