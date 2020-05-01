@@ -1,2 +1,5 @@
 OrderedDictionary {
+	'packages\/WebCrawler-Tests.package' : #SquotCypressCodeSerializer,
+	'packages\/WebCrawler-Core.package' : #SquotCypressCodeSerializer,
+	'packages\/BaselineOfWebCrawler.package' : #SquotCypressCodeSerializer
 }
