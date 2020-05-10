@@ -1,0 +1,14 @@
+{
+	"category" : "WebCrawler-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"documentContent" ],
+	"name" : "WCDocumentFetcher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
