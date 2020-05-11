@@ -1,8 +1,10 @@
 crawl
 crawl: url
 
+	self links: OrderedCollection new.
 	self fetcher fetch: url.
 	self parser parse: (self fetcher content).
-	self content store: self parser content.
+	self content store: self parser.
 	
-	self content substituteRelativeUrls: url
+	self content substituteRelativeUrls: url.
+	self parser links: self content links.

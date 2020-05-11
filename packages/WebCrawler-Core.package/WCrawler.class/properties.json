@@ -10,7 +10,8 @@
 		"parser",
 		"content",
 		"crawler",
-		"urlCrawler" ],
+		"urlCrawler",
+		"links" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],
