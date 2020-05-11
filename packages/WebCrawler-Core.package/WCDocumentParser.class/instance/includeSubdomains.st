@@ -1,4 +1,4 @@
 parserConfiguration
 includeSubdomains
 
-	^ self configurations at: #subdomains
+	^ self configuration at: #subdomains

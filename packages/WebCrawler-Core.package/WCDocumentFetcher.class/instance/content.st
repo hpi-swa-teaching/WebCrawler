@@ -1,4 +1,4 @@
 accessing
 content
 
-	self documentContent content
+	^ self documentContent content

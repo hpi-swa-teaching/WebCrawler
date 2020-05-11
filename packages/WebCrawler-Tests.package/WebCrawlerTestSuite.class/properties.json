@@ -1,14 +1,13 @@
 {
-	"category" : "WebCrawler-Core",
+	"category" : "WebCrawler-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"links",
-		"documentRoot" ],
-	"name" : "WCDocumentContentManager",
+		 ],
+	"name" : "WebCrawlerTestSuite",
 	"pools" : [
 		 ],
 	"super" : "Object",

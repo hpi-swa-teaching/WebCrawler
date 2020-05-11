@@ -1,4 +1,4 @@
 parserConfiguration
 includeSubdomains: aBoolean
 
-	self configurations at: #subdomains put: aBoolean
+	self configuration at: #subdomains put: aBoolean

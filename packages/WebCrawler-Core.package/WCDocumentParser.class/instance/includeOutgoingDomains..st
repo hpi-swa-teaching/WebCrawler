@@ -1,4 +1,4 @@
 parserConfiguration
 includeOutgoingDomains: aBoolean
 
-	self configurations at: #outgoingDomains put: aBoolean
+	self configuration at: #outgoingDomains put: aBoolean
