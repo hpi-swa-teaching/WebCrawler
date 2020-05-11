@@ -1,0 +1,4 @@
+parserConfiguration
+defaultIncludeOutgoingDomains
+
+	^ true

@@ -1,4 +1,4 @@
 fetching
 fetch: url
 
-	self documentContent: ((url asUrl) retrieveContents)
+	self documentContent: (WebClient httpGet: url)

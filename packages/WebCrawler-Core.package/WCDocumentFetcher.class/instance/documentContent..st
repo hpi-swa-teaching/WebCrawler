@@ -1,4 +1,4 @@
-assigning
+accessing
 documentContent: aMIMEDocument
 
 	documentContent := aMIMEDocument

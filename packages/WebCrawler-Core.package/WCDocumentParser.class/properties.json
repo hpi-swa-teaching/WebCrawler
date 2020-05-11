@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"documentRoot",
+		"configuration",
+		"links" ],
 	"name" : "WCDocumentParser",
 	"pools" : [
 		 ],

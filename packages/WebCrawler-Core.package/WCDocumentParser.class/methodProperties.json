@@ -2,4 +2,22 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"configuration" : "PAU 5/11/2020 14:47",
+		"configuration:" : "PAU 5/11/2020 14:48",
+		"defaultIncludeMetaUrls" : "PAU 5/11/2020 14:46",
+		"defaultIncludeOutgoingDomains" : "PAU 5/11/2020 14:42",
+		"defaultIncludeSubdomains" : "PAU 5/11/2020 14:42",
+		"documentRoot" : "PAU 5/11/2020 14:40",
+		"documentRoot:" : "PAU 5/11/2020 14:39",
+		"evaluateLink:" : "PAU 5/11/2020 16:03",
+		"includeMetaUrls" : "PAU 5/11/2020 14:47",
+		"includeMetaUrls:" : "PAU 5/11/2020 14:57",
+		"includeOutgoingDomains" : "PAU 5/11/2020 14:58",
+		"includeOutgoingDomains:" : "PAU 5/11/2020 14:58",
+		"includeSubdomains" : "PAU 5/11/2020 14:58",
+		"includeSubdomains:" : "PAU 5/11/2020 14:58",
+		"initialize" : "PAU 5/11/2020 16:03",
+		"links" : "PAU 5/11/2020 16:03",
+		"links:" : "PAU 5/11/2020 16:03",
+		"parse:" : "PAU 5/11/2020 15:00",
+		"traverseDocumentTree:" : "PAU 5/11/2020 15:57" } }

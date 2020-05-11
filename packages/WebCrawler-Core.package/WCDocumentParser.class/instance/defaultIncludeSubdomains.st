@@ -1,0 +1,4 @@
+parserConfiguration
+defaultIncludeSubdomains
+
+	^ true
