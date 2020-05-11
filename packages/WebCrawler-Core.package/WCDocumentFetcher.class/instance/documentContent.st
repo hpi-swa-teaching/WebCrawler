@@ -1,0 +1,4 @@
+accessing
+documentContent
+
+	^ documentContent
