@@ -1,0 +1,4 @@
+testing
+testAll
+
+	self subclassResponsibility

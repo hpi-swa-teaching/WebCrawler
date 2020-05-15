@@ -1,0 +1,14 @@
+{
+	"category" : "WebCrawler-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WCTestClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
