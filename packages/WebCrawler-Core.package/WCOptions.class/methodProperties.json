@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"defaultFetchProtocol" : "PAU 5/17/2020 16:05",
+		"defaultIncludeOutgoingDomains" : "PAU 5/17/2020 15:31",
+		"defaultIncludeSiteInternalReferences" : "PAU 5/17/2020 15:31",
+		"defaultIncludeSourceUrls" : "PAU 5/17/2020 15:31",
+		"defaultIncludeSubdomains" : "PAU 5/17/2020 15:31",
+		"fetchProtocol" : "PAU 5/17/2020 16:05",
+		"fetchProtocol:" : "PAU 5/17/2020 16:06",
+		"includeOutgoingDomains" : "PAU 5/17/2020 15:35",
+		"includeOutgoingDomains:" : "PAU 5/17/2020 15:40",
+		"includeSiteInternalReferences" : "PAU 5/17/2020 15:35",
+		"includeSiteInternalReferences:" : "PAU 5/17/2020 15:40",
+		"includeSourceUrls" : "PAU 5/17/2020 15:32",
+		"includeSourceUrls:" : "PAU 5/17/2020 15:40",
+		"includeSubdomains" : "PAU 5/17/2020 15:35",
+		"includeSubdomains:" : "PAU 5/17/2020 15:40",
+		"initialize" : "PAU 5/17/2020 16:06",
+		"parameter" : "PAU 5/17/2020 15:38",
+		"parameter:" : "PAU 5/17/2020 15:38",
+		"storeUniqueUrls" : "PAU 5/17/2020 15:39",
+		"storeUniqueUrls:" : "PAU 5/17/2020 15:40" } }

@@ -1,3 +1,4 @@
 testing
 testAll
 
+	self testUrlCrawling

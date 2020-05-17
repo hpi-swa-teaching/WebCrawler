@@ -8,7 +8,8 @@
 	"instvars" : [
 		"documentRoot",
 		"configuration",
-		"links" ],
+		"links",
+		"options" ],
 	"name" : "WCDocumentParser",
 	"pools" : [
 		 ],

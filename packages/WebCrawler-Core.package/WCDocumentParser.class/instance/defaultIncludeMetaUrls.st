@@ -1,4 +1,0 @@
-parserConfiguration
-defaultIncludeMetaUrls
-
-	^ false

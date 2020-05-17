@@ -1,4 +1,4 @@
-parserConfiguration
+parsing
 defaultIncludeSiteInternalReferences
 
 	^ false

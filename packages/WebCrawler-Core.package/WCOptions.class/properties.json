@@ -4,12 +4,16 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "PAU 5/17/2020 16:30",
 	"instvars" : [
+		"fetcher",
+		"parser",
+		"content",
+		"crawler",
+		"urlCrawler",
 		"links",
-		"documentRoot",
-		"options" ],
-	"name" : "WCDocumentContentManager",
+		"parameter" ],
+	"name" : "WCOptions",
 	"pools" : [
 		 ],
 	"super" : "Object",

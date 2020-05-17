@@ -11,7 +11,8 @@
 		"content",
 		"crawler",
 		"urlCrawler",
-		"links" ],
+		"links",
+		"parameter" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],

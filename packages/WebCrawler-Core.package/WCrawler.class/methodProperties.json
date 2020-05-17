@@ -3,10 +3,11 @@
 		 },
 	"instance" : {
 		"crawl:" : "PAU 5/15/2020 11:53",
-		"crawl:parameter:" : "PAU 5/15/2020 11:54",
+		"crawl:parameter:" : "PAU 5/17/2020 14:55",
 		"crawlUrls:" : "PAU 5/15/2020 11:55",
-		"initialize" : "PAU 5/10/2020 18:46",
+		"initialize" : "PAU 5/17/2020 15:58",
 		"links" : "PAU 5/11/2020 19:54",
 		"links:" : "PAU 5/11/2020 19:54",
+		"searchLinkSubstring:" : "PAU 5/17/2020 15:25",
 		"urlCrawler" : "PAU 5/10/2020 18:49",
 		"urlCrawler:" : "PAU 5/10/2020 18:49" } }

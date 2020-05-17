@@ -3,7 +3,8 @@ crawl: url parameter: aDictionary
 " test if parameters are neccessary in future releases! "
 	| links |
 	
+	self parameter: aDictionary.
 	self flag: #ToDo.
 	
 	links := self urlCrawler crawl: url.
-	links do: [:link | Transcript show: link ;cr]
+	self appendLinks: links

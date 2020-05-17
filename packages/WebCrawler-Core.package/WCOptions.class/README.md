@@ -1,0 +1,1 @@
+This class holds all the configurations for the webcrawler
