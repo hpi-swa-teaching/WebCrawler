@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"links",
-		"options" ],
+		"options",
+		"bloomFilterArray" ],
 	"name" : "WCBloomFilter",
 	"pools" : [
 		 ],

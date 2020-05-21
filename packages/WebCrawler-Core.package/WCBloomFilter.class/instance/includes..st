@@ -3,4 +3,4 @@ includes: aString
 
 	self flag: #toDo. " check if string is in bloom filter and scan eventually the links orderedCollection "
 	
-	^ self links include: aString
+	^ self links includes: aString
