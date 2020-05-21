@@ -8,4 +8,4 @@ testSecondLevelDomains
 	self object crawl: 'http://www.squeak.org'.
 	self assert: (self object secondLevelDomain = 'squeak.org').
 	
-	Transcript show: 'All SecondLevenDomains test cases ran without error!';cr
+	Transcript show: 'All SecondLevelDomains test cases ran without error!';cr
