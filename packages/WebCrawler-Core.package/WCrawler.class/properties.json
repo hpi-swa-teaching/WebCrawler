@@ -13,7 +13,8 @@
 		"urlCrawler",
 		"links",
 		"parameter",
-		"options" ],
+		"options",
+		"secondLevelDomain" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],
