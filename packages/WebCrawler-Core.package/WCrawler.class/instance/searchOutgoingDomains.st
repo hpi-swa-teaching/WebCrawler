@@ -1,4 +1,4 @@
 filtering
 searchOutgoingDomains
 
-	self searchForRegex: '^((?!',secondLevelDomain,').)*$'
+	^ self searchForRegex: '^((?!',secondLevelDomain,').)*$'

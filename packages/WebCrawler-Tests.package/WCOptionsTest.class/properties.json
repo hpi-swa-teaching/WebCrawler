@@ -1,0 +1,14 @@
+{
+	"category" : "WebCrawler-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WCOptionsTest",
+	"pools" : [
+		 ],
+	"super" : "WCTestClass",
+	"type" : "normal" }

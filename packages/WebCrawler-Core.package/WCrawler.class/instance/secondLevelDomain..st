@@ -9,6 +9,7 @@ secondLevelDomain: url
 		[char := char+1 .(url at: char) == $/ 
 		ifTrue: [((url at: char-1) == $/) | ((url at: char-1) == $:) 
 		ifFalse: [endOfDomain := char. char := url size]]].
+	endOfDomain = 0 ifTrue: [endOfDomain := char + 1].
 
 	char := endOfDomain.
 	amountOfDots := 0.

@@ -1,4 +1,6 @@
 testing
 testAll
 
-	self testUrlCrawling
+	self testUrlCrawling;
+	testSecondLevelDomains;
+	testOutgoingDomains.
