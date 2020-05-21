@@ -1,4 +1,0 @@
-autocrawling
-defaultMaintainSiteMap
-
-	^ true

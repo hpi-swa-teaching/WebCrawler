@@ -1,4 +1,0 @@
-autocrawling
-defaultMaxLinksToExtract
-
-	^ 10

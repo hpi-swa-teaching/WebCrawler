@@ -3,8 +3,10 @@ searchLinkSubstring: aString
 
 	| filteredLinks searchString |
 	filteredLinks := OrderedCollection new.
-	searchString := '*',aString,'*'.
+	searchString := '.*',(aString),'.*'.
 	
-	filteredLinks := self links select: [:link | (searchString match: link)].
+	filteredLinks := self links select: [:link | (link matchesRegex: searchString)].
+	
+	filteredLinks do: [:link | Transcript show: link; cr].
 	
 	^ filteredLinks

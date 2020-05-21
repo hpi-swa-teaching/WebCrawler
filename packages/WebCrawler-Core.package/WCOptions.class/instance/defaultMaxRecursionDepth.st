@@ -1,4 +1,0 @@
-autocrawling
-defaultMaxRecursionDepth
-
-	^ 4
