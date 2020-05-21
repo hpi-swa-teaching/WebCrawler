@@ -1,4 +1,4 @@
 filtering
 searchSubDomains
 
-	self searchForRegex: '[^www].',secondLevelDomain
+	self searchForRegex: '[^(www)]*.',secondLevelDomain,'.*'
