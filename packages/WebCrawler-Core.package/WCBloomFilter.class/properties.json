@@ -1,0 +1,15 @@
+{
+	"category" : "WebCrawler-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"links",
+		"options" ],
+	"name" : "WCBloomFilter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
