@@ -1,5 +1,5 @@
 storing
 store: aWCDocumentParser
 	
-	self links: aWCDocumentParser links.
+	self storeLinks: aWCDocumentParser links.
 	self documentRoot: aWCDocumentParser documentRoot

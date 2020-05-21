@@ -1,4 +1,4 @@
-parsing
+storing
 storeUniqueUrls
 
 	^ self parameter at: #uniqueUrls
