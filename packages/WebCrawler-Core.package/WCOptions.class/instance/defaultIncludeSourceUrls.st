@@ -1,4 +1,4 @@
 parsing
 defaultIncludeSourceUrls
 
-	^ false
+	^ true

@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"documentRoot",
-		"configuration",
-		"links",
-		"options",
-		"sourceUrl" ],
-	"name" : "WCDocumentParser",
+		 ],
+	"name" : "WebCrawlerCoreServiceProvider",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ServiceProvider",
 	"type" : "normal" }
