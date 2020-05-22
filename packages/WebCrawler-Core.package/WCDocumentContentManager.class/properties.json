@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"links",
+		"documentRoot",
+		"options" ],
 	"name" : "WCDocumentContentManager",
 	"pools" : [
 		 ],

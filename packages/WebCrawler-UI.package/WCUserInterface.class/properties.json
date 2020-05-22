@@ -1,0 +1,14 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jul 5/11/2020 19:05",
+	"instvars" : [
+		 ],
+	"name" : "WCUserInterface",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

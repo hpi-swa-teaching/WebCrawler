@@ -10,7 +10,11 @@
 		"parser",
 		"content",
 		"crawler",
-		"urlCrawler" ],
+		"urlCrawler",
+		"links",
+		"parameter",
+		"options",
+		"secondLevelDomain" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],

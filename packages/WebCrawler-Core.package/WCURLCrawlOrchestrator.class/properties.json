@@ -8,7 +8,8 @@
 	"instvars" : [
 		"fetcher",
 		"parser",
-		"content" ],
+		"content",
+		"options" ],
 	"name" : "WCURLCrawlOrchestrator",
 	"pools" : [
 		 ],

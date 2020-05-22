@@ -1,0 +1,4 @@
+parsing
+defaultIncludeSiteInternalReferences
+
+	^ false

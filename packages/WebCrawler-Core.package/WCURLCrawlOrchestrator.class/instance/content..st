@@ -1,4 +1,4 @@
-assigning
+accessing
 content: aDocumentContentManager
 
 	content := aDocumentContentManager

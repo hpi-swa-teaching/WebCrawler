@@ -1,0 +1,4 @@
+accessing
+bloomFilterArray
+	
+	^ bloomFilterArray

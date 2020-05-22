@@ -1,6 +1,6 @@
 crawl
 crawl: url
 
-	| links |
-	links := self urlCrawler crawl: url.
-	links do: [:link | Transcript show: link ;cr]
+	self urlCrawler crawl: url.
+	self secondLevelDomain: url.
+	self links: self links , self urlCrawler links

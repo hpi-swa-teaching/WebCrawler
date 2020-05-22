@@ -1,0 +1,4 @@
+fetching
+defaultFetchProtocol
+
+	^'http'

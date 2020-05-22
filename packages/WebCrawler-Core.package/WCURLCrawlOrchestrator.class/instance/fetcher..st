@@ -1,4 +1,4 @@
-assigning
+accessing
 fetcher: aDocumentFetcher
 
 	fetcher := aDocumentFetcher

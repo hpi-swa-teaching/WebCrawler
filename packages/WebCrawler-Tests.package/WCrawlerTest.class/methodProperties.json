@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "PAU 5/15/2020 11:49",
+		"testAll" : "js 5/21/2020 17:49",
+		"testOutgoingDomains" : "js 5/21/2020 17:46",
+		"testSecondLevelDomains" : "js 5/21/2020 17:53",
+		"testUrlCrawling" : "js 5/21/2020 17:57" } }

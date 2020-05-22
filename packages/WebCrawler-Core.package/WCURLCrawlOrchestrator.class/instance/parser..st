@@ -1,4 +1,4 @@
-assigning
+accessing
 parser: aDocumentParser
 
 	parser := aDocumentParser
