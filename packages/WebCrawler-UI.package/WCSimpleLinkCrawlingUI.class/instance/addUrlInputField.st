@@ -1,7 +1,7 @@
 creators
 addUrlInputField
 
-	self urlInputField: (TextMorph new
+	self urlInputField: (UserText new
 		backgroundColor: (Color lightGray);
 		contents: 'enter url here!';
 		autoFit: false;
@@ -14,4 +14,4 @@ addUrlInputField
 		yourself).
 
 	self addMorphFront: self urlInputField.
-	self urlInputField extent: (self width * 0.8) @ (self height * 0.2)
+	self urlInputField extent: (self width * 0.8) @ (self height * 0.075)
