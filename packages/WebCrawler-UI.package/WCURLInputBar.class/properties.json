@@ -1,0 +1,17 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"urlInputField",
+		"crawlButton",
+		"crawler",
+		"options" ],
+	"name" : "WCURLInputBar",
+	"pools" : [
+		 ],
+	"super" : "TextMorph",
+	"type" : "normal" }

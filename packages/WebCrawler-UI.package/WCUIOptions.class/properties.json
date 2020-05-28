@@ -1,0 +1,18 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"color1",
+		"color2",
+		"color3",
+		"color4",
+		"colorText" ],
+	"name" : "WCUIOptions",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
