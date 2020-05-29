@@ -10,7 +10,7 @@ addSubstringButton
 		target: [
 			Transcript show: 'substring button clicked! content: ', self substringInputField contents;cr.
 			self links: (self crawler searchLinkSubstring: (self substringInputField contents)).
-			Transcript show: (self links)];
+			self listMorph updateList: (self links)];
 		actionSelector: #value;
 		label: 'Search' font: self options defaultFont;
 		extent: 80 @ textFieldSize;

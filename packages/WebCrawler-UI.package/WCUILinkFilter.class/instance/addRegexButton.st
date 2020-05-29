@@ -10,7 +10,7 @@ addRegexButton
 		target: [
 			Transcript show: 'regex button clicked! content: ', self regexInputField contents;cr.
 			self links: (self crawler searchForRegex: (self regexInputField contents)).
-			Transcript show: (self links)];
+			self listMorph updateList: (self links)];
 		actionSelector: #value;
 		label: 'Search' font: self options defaultFont;
 		extent: 80 @ textFieldSize;

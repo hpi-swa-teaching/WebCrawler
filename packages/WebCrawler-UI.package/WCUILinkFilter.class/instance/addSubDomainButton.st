@@ -6,14 +6,14 @@ addSubDomainButton
 
 	self subDomainButton: (SimpleButtonMorph new
 		color: self options color2;
-		position: self position + ((self width * 0.20) @ (self height * 0.24)); 
+		position: self position + ((self width * 0.35) @ (self height * 0.24)); 
 		target: [
 			Transcript show: 'Subdomain button clicked!'; cr.
 			self links: (self crawler searchSubDomains).
-			Transcript show: (self links)];
+			self listMorph updateList: (self links)];
 		actionSelector: #value;
-		label: 'Get Subdomains' font: self options defaultFont;
-		extent: 240 @ textFieldSize;
+		label: 'Filter Subdomains' font: self options smallerDefaultFont;
+		extent: 180 @ textFieldSize;
 		openInWorld;
 		yourself).
 	

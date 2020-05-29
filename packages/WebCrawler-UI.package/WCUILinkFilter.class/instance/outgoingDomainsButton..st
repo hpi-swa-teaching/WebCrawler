@@ -1,4 +1,4 @@
 accessing
-outgoingDomainButton: aMorph
+outgoingDomainsButton: aMorph
 
 	outgoingDomainButton := aMorph

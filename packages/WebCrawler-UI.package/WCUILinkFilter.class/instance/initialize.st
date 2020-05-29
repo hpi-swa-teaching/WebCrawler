@@ -15,5 +15,7 @@ initialize
 	self addRegexButton.
 	self addSecondDomainButton.
 	self addSubDomainButton.
+	self addOutgoingDomainsButton.
+	self addListMorph.
 	self openInWorld.
 	

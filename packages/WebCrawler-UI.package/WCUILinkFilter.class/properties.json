@@ -18,7 +18,8 @@
 		"secondDomainButton",
 		"links",
 		"subDomainButton",
-		"outgoingDomainButton" ],
+		"outgoingDomainButton",
+		"listMorph" ],
 	"name" : "WCUILinkFilter",
 	"pools" : [
 		 ],
