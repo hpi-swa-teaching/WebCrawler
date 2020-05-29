@@ -9,9 +9,11 @@ initialize
 	self options: WCUIOptions new.
 	self options setDarkMode.
 	
-	self addUrlInputField.
-	self addCrawlButton.
-	self addFilterButton.
-	self crawler: WCrawler new.
+	self addSubstringInputField.
+	self addSubstringButton.
+	self addRegexInputField.
+	self addRegexButton.
+	self addSecondDomainButton.
+	self addSubDomainButton.
 	self openInWorld.
 	
