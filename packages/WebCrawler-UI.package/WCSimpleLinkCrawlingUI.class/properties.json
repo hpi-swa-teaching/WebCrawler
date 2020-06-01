@@ -11,7 +11,9 @@
 		"crawler",
 		"options",
 		"uiLinkFilter",
-		"filterButton" ],
+		"filterButton",
+		"listMorph",
+		"model" ],
 	"name" : "WCSimpleLinkCrawlingUI",
 	"pools" : [
 		 ],

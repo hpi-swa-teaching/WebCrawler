@@ -1,0 +1,17 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"colorIndex",
+		"linkColors",
+		"links",
+		"options" ],
+	"name" : "WCLinkListMorph",
+	"pools" : [
+		 ],
+	"super" : "WCMutableListMorph",
+	"type" : "normal" }

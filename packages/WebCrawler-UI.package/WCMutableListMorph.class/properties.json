@@ -1,0 +1,15 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dynamicResize",
+		"list" ],
+	"name" : "WCMutableListMorph",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }
