@@ -2,17 +2,12 @@ initialize-release
 initialize
 
 	super initialize.
-	
-	self crAction: [].
 	self options: WCUIOptions new.
-	self backgroundColor: (Color lightGray);
-		contents: 'enter url here!aj;lkdsfjasdfhsdf;adsljkfas;dflkjasf;lskafjasfd';
-		autoFit: false;
-		width: 300;
-		height: 200;
-		wrapFlag: false;
-		beAllFont: self options defaultFont;
-		position: 100@100;
+	self balloonText: 'enter url here!';
 		borderStyle: (BorderStyle width: 3 color: self options color4);
-		margins: 7;
-		openInWorld
+		askBeforeDiscardingEdits: false;
+		vScrollBarPolicy: #never;
+		hScrollBarPolicy: #never.
+	self textMorph beAllFont: self options defaultFont;
+		margins: self options defaultInputFieldMargins;
+		contents: ''.

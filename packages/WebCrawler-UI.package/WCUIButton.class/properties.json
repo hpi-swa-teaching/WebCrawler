@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"colorIndex",
-		"linkColors",
-		"links",
-		"options" ],
-	"name" : "WCLinkListMorph",
+		 ],
+	"name" : "WCUIButton",
 	"pools" : [
 		 ],
-	"super" : "WCMutableListMorph",
+	"super" : "PluggableButtonMorph",
 	"type" : "normal" }

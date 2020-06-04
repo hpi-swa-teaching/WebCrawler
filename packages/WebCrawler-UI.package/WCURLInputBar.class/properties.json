@@ -13,5 +13,5 @@
 	"name" : "WCURLInputBar",
 	"pools" : [
 		 ],
-	"super" : "TextMorph",
+	"super" : "PluggableTextMorphPlus",
 	"type" : "normal" }
