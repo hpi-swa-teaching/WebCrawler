@@ -2,18 +2,16 @@ initialize-release
 initialize
 
 	super initialize.
-	self color: Color darkGray; 
-		width: 600; 
-		height: 600.
-	
 	self options: WCUIOptions new.
-	self options setDarkMode.
+	self color: self options color1; 
+		width: self options defaultWindowWidth; 
+		height: self options defaultWindowHeight.
+	
+
 	
 	self crawler: WCrawler new.
 	self addUrlInputField.
 	self addCrawlButton.
 	self addFilterButton.
-	self addListMorph.
-	
-	self listMorph options: self options
+	self addListMorph
 	

@@ -1,17 +1,11 @@
 creators
 addSubstringInputField
 
-	self substringInputField: (UserText new
-		backgroundColor: (Color lightGray);
-		contents: 'enter substring here!';
-		autoFit: false;
-		wrapFlag: false;
-		beAllFont: self options defaultFont;
+	self subStringInputField: (WCURLInputBar new
 		position: self position + ((self height * 0.04) @ (self height * 0.04));
-		borderStyle: (BorderStyle width: 3 color: self options color4);
-		margins: 7;
-		openInWorld;
+		crAction: [self searchSubstring];
 		yourself).
 
-	self addMorphFront: self substringInputField.
-	self substringInputField extent: (self width * 0.8) @ (self height * 0.075)
+	self subStringInputField setBalloonText: 'enter substring here'.
+	self addMorphFront: self subStringInputField.
+	self subStringInputField extent: (self width * 0.8) @ (self height * 0.075)

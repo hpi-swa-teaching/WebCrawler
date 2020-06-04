@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"dynamicResize",
-		"list" ],
-	"name" : "WCMutableListMorph",
+		"doubleClickAction",
+		"clickAction" ],
+	"name" : "WCUILinkList",
 	"pools" : [
 		 ],
-	"super" : "ScrollPane",
+	"super" : "PluggableListMorph",
 	"type" : "normal" }

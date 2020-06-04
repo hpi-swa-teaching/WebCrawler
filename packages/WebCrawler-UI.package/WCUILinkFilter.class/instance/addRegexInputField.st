@@ -1,17 +1,11 @@
 creators
 addRegexInputField
 
-	self regexInputField: (UserText new
-		backgroundColor: (Color lightGray);
-		contents: 'enter regex here!';
-		autoFit: false;
-		wrapFlag: false;
-		beAllFont: self options defaultFont;
+	self regexInputField: (WCURLInputBar new
 		position: self position + ((self height * 0.04) @ (self height * 0.14));
-		borderStyle: (BorderStyle width: 3 color: self options color4);
-		margins: 7;
-		openInWorld;
+		crAction: [self searchRegex];
 		yourself).
-
+		
+	self regexInputField setBalloonText: 'enter regex here'.	
 	self addMorphFront: self regexInputField.
 	self regexInputField extent: (self width * 0.8) @ (self height * 0.075)

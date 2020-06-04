@@ -1,7 +1,7 @@
 creators
 addListMorph
 
-	self listMorph: (WCLinkListMorph new
+	self listMorph: (PluggableListMorph new
 		"autoFit: false;
 		wrapFlag: false;
 		beAllFont: self options defaultFont;"

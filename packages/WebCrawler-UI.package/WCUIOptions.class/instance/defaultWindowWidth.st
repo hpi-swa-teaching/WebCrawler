@@ -1,0 +1,4 @@
+window
+defaultWindowWidth
+
+	^ 500

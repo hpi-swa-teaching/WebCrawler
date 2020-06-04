@@ -1,17 +1,13 @@
 creators
 addUrlInputField
 
-	self urlInputField: (UserText new
-		backgroundColor: (Color lightGray);
-		contents: 'enter url here!';
-		autoFit: false;
-		wrapFlag: false;
-		beAllFont: self options defaultFont;
+	| fieldHeight |
+	fieldHeight := self options defaultFont pointSize + (5 * self options defaultInputFieldMargins).
+	self urlInputField: (WCURLInputBar new
 		position: self position + ((self height * 0.04) @ (self height * 0.04));
-		borderStyle: (BorderStyle width: 3 color: self options color4);
-		margins: 7;
-		openInWorld;
+		crAction: [self startCrawling];
 		yourself).
-
 	self addMorphFront: self urlInputField.
-	self urlInputField extent: (self width * 0.8) @ (self height * 0.075)
+	Transcript show: 'pointsize: ', self options defaultFont pointSize, ' inputmarginsP: ' , self options defaultInputFieldMargins,  ' got field height: ', fieldHeight;cr.
+	self urlInputField extent: (self width * 0.8) @ fieldHeight.
+	Transcript show: 'now urlfieldheight: ', self urlInputField height;cr.
