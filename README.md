@@ -4,7 +4,15 @@ A simple to use and basic Web Crawler for Squeak.
 ## Overview
 This WebCrawler package currently supports basic web crawling through a given link, a simple filter option and an AutoCrawler-mode.
 
-## Usage
+## Usage(UI)
+
+To start the link crawl ui, use this example:
+```
+w := WCSimpleLinkCrawlingUI new.
+w openInWorld.
+```
+
+## Usage (Core)
 To start a basic Crawl, use this example:
 ```
 w := WCrawler new.

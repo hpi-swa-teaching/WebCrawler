@@ -1,0 +1,25 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"crawlButton",
+		"crawler",
+		"options",
+		"subStringButton",
+		"regexInputField",
+		"regexButton",
+		"secondDomainButton",
+		"links",
+		"subDomainButton",
+		"outgoingDomainButton",
+		"listMorph",
+		"subStringInputField" ],
+	"name" : "WCUILinkFilter",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

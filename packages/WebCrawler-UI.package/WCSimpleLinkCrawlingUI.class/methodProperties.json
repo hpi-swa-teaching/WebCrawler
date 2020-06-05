@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addCrawlButton" : "PAU 6/2/2020 16:37",
+		"addFilterButton" : "PAU 6/4/2020 10:16",
+		"addListMorph" : "PAU 6/4/2020 13:20",
+		"addUrlInputField" : "PAU 6/4/2020 10:43",
+		"crawlButton" : "PAU 5/25/2020 19:10",
+		"crawlButton:" : "js 5/29/2020 11:44",
+		"crawler" : "PAU 5/25/2020 19:12",
+		"crawler:" : "PAU 5/25/2020 19:12",
+		"filterButton" : "js 5/29/2020 11:42",
+		"filterButton:" : "js 5/29/2020 11:45",
+		"initialize" : "PAU 6/2/2020 16:44",
+		"listMorph" : "PAU 5/31/2020 19:43",
+		"listMorph:" : "PAU 5/31/2020 19:43",
+		"model" : "PAU 5/31/2020 22:14",
+		"model:" : "PAU 5/31/2020 22:14",
+		"options" : "PAU 5/25/2020 19:35",
+		"options:" : "PAU 5/31/2020 23:33",
+		"show" : "PAU 6/4/2020 10:30",
+		"show:item:" : "PAU 6/4/2020 10:55",
+		"startCrawling" : "PAU 6/4/2020 10:19",
+		"uiLinkFilter" : "js 5/29/2020 11:47",
+		"uiLinkFilter:" : "js 5/29/2020 12:55",
+		"urlInputField" : "PAU 5/25/2020 18:41",
+		"urlInputField:" : "PAU 5/25/2020 18:40" } }

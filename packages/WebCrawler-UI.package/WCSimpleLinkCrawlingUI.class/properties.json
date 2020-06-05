@@ -1,0 +1,21 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"urlInputField",
+		"crawlButton",
+		"crawler",
+		"options",
+		"uiLinkFilter",
+		"filterButton",
+		"listMorph",
+		"model" ],
+	"name" : "WCSimpleLinkCrawlingUI",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -10,7 +10,8 @@
 		"configuration",
 		"links",
 		"options",
-		"sourceUrl" ],
+		"sourceUrl",
+		"utf8dictionary" ],
 	"name" : "WCDocumentParser",
 	"pools" : [
 		 ],

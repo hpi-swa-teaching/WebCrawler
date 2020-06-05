@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asyncCrawl:callback:" : "PAU 5/31/2020 21:22",
 		"crawl:" : "js 5/21/2020 15:05",
 		"crawl:parameter:" : "PAU 5/17/2020 14:55",
 		"crawlUrls:" : "PAU 5/15/2020 11:55",
@@ -10,6 +11,8 @@
 		"links:" : "PAU 5/11/2020 19:54",
 		"options" : "PAU 5/20/2020 20:24",
 		"options:" : "PAU 5/20/2020 20:25",
+		"process" : "PAU 5/31/2020 21:22",
+		"process:" : "PAU 5/31/2020 21:22",
 		"searchForRegex:" : "js 5/21/2020 16:37",
 		"searchLinkSubstring:" : "js 5/21/2020 17:34",
 		"searchOutgoingDomains" : "js 5/21/2020 17:34",
