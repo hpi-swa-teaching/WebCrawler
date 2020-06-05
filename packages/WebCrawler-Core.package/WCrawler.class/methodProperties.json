@@ -3,7 +3,8 @@
 		 },
 	"instance" : {
 		"asyncCrawl:callback:" : "PAU 5/31/2020 21:22",
-		"crawl:" : "js 5/21/2020 15:05",
+		"beautifyLinks" : "js 6/5/2020 11:28",
+		"crawl:" : "js 6/5/2020 11:27",
 		"crawl:parameter:" : "PAU 5/17/2020 14:55",
 		"crawlUrls:" : "PAU 5/15/2020 11:55",
 		"initialize" : "PAU 5/17/2020 15:58",
@@ -13,6 +14,7 @@
 		"options:" : "PAU 5/20/2020 20:25",
 		"process" : "PAU 5/31/2020 21:22",
 		"process:" : "PAU 5/31/2020 21:22",
+		"replaceUTF8:" : "js 6/5/2020 11:25",
 		"searchForRegex:" : "js 5/21/2020 16:37",
 		"searchLinkSubstring:" : "js 5/21/2020 17:34",
 		"searchOutgoingDomains" : "js 5/21/2020 17:34",
@@ -20,4 +22,5 @@
 		"secondLevelDomain" : "js 5/20/2020 22:12",
 		"secondLevelDomain:" : "js 5/21/2020 17:48",
 		"urlCrawler" : "PAU 5/10/2020 18:49",
-		"urlCrawler:" : "PAU 5/10/2020 18:49" } }
+		"urlCrawler:" : "PAU 5/10/2020 18:49",
+		"utf8dictionary" : "js 6/5/2020 11:23" } }

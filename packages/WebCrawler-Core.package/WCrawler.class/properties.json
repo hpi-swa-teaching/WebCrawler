@@ -14,7 +14,8 @@
 		"links",
 		"parameter",
 		"options",
-		"secondLevelDomain" ],
+		"secondLevelDomain",
+		"utf8dictionary" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],
