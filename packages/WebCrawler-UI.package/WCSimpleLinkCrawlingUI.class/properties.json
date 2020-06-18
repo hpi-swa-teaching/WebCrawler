@@ -17,5 +17,5 @@
 	"name" : "WCSimpleLinkCrawlingUI",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "SystemWindow",
 	"type" : "normal" }

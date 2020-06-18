@@ -2,10 +2,9 @@ initialize-release
 initialize
 
 	super initialize.
-	self color: Color darkGray; 
-		width: 600; 
-		height: 600.
-	
+	self setLabel: 'WebCrawler - Filter'.
+	self setWindowColor: Color darkGray.
+	self extent: (600@800).
 	self options: WCUIOptions new.
 	self options setDarkMode.
 	
@@ -18,4 +17,4 @@ initialize
 	self addOutgoingDomainsButton.
 	self addListMorph.
 	self openInWorld.
-	
+	self extent: (600@800).
