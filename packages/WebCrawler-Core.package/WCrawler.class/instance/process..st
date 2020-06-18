@@ -1,4 +1,4 @@
 accessing
-process: aProcress
-	
-	process := aProcress
+process: aProcess
+
+	process := aProcess

@@ -1,0 +1,21 @@
+{
+	"category" : "WebCrawler-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PAU 6/18/2020 10:41",
+	"instvars" : [
+		"siteGraph",
+		"siteMap",
+		"links",
+		"utf8Dictionary",
+		"secondLevelDomains",
+		"visitedCount",
+		"options",
+		"newLinks" ],
+	"name" : "WCLinkStorage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

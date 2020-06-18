@@ -1,0 +1,4 @@
+storing
+defaultSubstituteRelativeUrls
+
+	^ true

@@ -1,4 +1,0 @@
-accessing
-secondLevelDomain
-
-	^ secondLevelDomain

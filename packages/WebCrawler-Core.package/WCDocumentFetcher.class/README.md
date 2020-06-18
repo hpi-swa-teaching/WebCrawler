@@ -1,0 +1,1 @@
+This class fetches the document and save it

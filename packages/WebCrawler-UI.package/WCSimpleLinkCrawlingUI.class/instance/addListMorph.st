@@ -10,6 +10,8 @@ addListMorph
 			self urlInputField textMorph contents: link.
 			self startCrawling];
 		openInWorld;
+		hScrollBarPolicy: #whenNeeded;
+		vScrollBarPolicy: #whenNeeded;
 		yourself).
 	
 	self addMorphFront: self listMorph.

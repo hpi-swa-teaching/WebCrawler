@@ -1,0 +1,1 @@
+this class hold all the second level domain in adjacency lists

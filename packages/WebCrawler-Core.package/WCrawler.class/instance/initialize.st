@@ -2,7 +2,8 @@ initialize-release
 initialize
 
 	self options: WCOptions new.
-	self urlCrawler: WCURLCrawlOrchestrator new.
-	self links: OrderedCollection new.
+	self fetcher: WCDocumentFetcher new.
+	self parser: WCDocumentParser new.
+	self storage: WCLinkStorage new.
 	
-	self urlCrawler options: self options
+	self propagateNewOptions
