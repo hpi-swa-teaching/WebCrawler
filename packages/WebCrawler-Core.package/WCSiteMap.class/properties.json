@@ -8,7 +8,10 @@
 	"instvars" : [
 		"fetcher",
 		"parser",
-		"content" ],
+		"content",
+		"domains",
+		"domainCollections",
+		"domainConnections" ],
 	"name" : "WCSiteMap",
 	"pools" : [
 		 ],

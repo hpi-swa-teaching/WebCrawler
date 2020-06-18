@@ -1,4 +1,4 @@
 storing
 defaultMaintainSiteGraph
 
-	^ false
+	^ true
