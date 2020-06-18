@@ -3,12 +3,10 @@ evaluateLink: aHtmlEntity
 
 	| link |
 	
-	self flag: #toDo.
-	" change this to also be able to process <script>- Tags"
-	
 	link := aHtmlEntity getAttribute: 'href'.
-	(link isNil or: [link size = 0]) ifFalse: [
-		('javascript*' match: link) ifFalse:  [
+	link isNil ifFalse: [
+		link := link withoutQuoting.
+		(link size = 0 or: [('javascript*' match: link) or: [link asUrl scheme = 'mailto']]) ifFalse:  [
 			link := self replaceUTF8: link.
     			((link at: 1) ~=  $# or: [self options includeSiteInternalReferences]) ifTrue: [
 				((link asUrl authority match: self sourceUrl asUrl authority) or: [(link asUrl authority subStrings: '.') size < 1] or: [self options includeOutgoingDomains]) ifTrue: [
