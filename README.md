@@ -22,8 +22,8 @@ and you can retrieve the links from this page using ``w links``.
 
 To start auto-crawling a page, simply use:
 ```
-u := WCAutoCrawler new.
-u start: 'http://www.google.com'
+u := WCrawler new.
+u startAutoCrawl: 'http://www.google.com'
 ```
 (and to terminate the crawling process, use ``u process terminate``.
 
