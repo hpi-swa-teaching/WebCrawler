@@ -1,0 +1,1 @@
+This class stores all the links in different representations if neccessary (e.g. simple list, site map or site graph)

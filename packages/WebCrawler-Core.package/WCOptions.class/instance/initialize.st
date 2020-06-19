@@ -10,4 +10,8 @@ initialize
 		#maxRecursionDepth -> self defaultMaxRecursionDepth . 
 		#maxLinksToExtract -> self defaultMaxLinksToExtract . 
 		#uniqueUrls -> self defaultUniqueUrls .
-		#maintainSiteMap -> self defaultMaintainSiteMap})
+		#maintainSiteMap -> self defaultMaintainSiteMap . 
+		#maintainSiteGraph -> self defaultMaintainSiteGraph . 
+		#maintainVisited -> self defaultMaintainVisited . 
+		#substituteRelativeUrls -> self defaultSubstituteRelativeUrls . 
+		#beautifyLinks -> self defaultBeautifyLinks})

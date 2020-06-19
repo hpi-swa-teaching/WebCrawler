@@ -6,9 +6,8 @@
 		 ],
 	"commentStamp" : "PAU 5/17/2020 16:30",
 	"instvars" : [
-		"fetcher",
-		"parser",
-		"content" ],
+		"domain",
+		"siteMap" ],
 	"name" : "WCSiteMap",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-autocrawling
+storing
 defaultMaintainSiteMap
 
 	^ false

@@ -9,7 +9,7 @@ addOutgoingDomainsButton
 		position: self position + ((self width * 0.01) @ (self height * 0.24)); 
 		target: [
 			Transcript show: 'outgoing Domains button clicked! ';cr.
-			self links: (self crawler searchOutgoingDomains).
+			self links: (self crawler storage searchOutgoingDomains).
 			self listMorph updateList: (self links)];
 		actionSelector: #value;
 		label: 'Filter Outgoing Domains' font: self options smallerDefaultFont;

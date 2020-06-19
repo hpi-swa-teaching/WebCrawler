@@ -2,8 +2,9 @@ initialize-release
 initialize
 
 	super initialize.
+	self setLabel: 'WebCrawler'.
 	self options: WCUIOptions new.
-	self color: self options color1; 
+	self setWindowColor: self options color1; 
 		width: self options defaultWindowWidth; 
 		height: self options defaultWindowHeight.
 	
@@ -13,5 +14,6 @@ initialize
 	self addUrlInputField.
 	self addCrawlButton.
 	self addFilterButton.
-	self addListMorph
+	self addListMorph.
+	self openInWorld
 	

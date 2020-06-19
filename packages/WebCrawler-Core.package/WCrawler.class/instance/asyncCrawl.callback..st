@@ -1,7 +1,7 @@
-crawl
-asyncCrawl: aString callback: aBlockClosure
+crawling
+asyncCrawl: aUrlString callback: aBlockClosure
 
 	self process: [
-		self crawl: aString.
+		self crawl: aUrlString.
 		aBlockClosure value
 		] fork.

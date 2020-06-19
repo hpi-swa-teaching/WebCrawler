@@ -1,4 +1,0 @@
-accessing
-fetcher
-
-	^ fetcher

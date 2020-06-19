@@ -1,6 +1,6 @@
-crawl
-crawl: url
+crawling
+crawl: aUrlString
 
-	self urlCrawler crawl: url.
-	self secondLevelDomain: url.
-	self links: self links , self urlCrawler links
+	self fetcher fetch: aUrlString.
+	self parser parse: (self fetcher content) from: aUrlString.
+	self storage store: self parser links source: aUrlString

@@ -1,0 +1,1 @@
+This class parses the document and searches for links

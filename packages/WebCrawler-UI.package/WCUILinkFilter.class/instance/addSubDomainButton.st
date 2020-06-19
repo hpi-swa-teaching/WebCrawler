@@ -9,7 +9,7 @@ addSubDomainButton
 		position: self position + ((self width * 0.35) @ (self height * 0.24)); 
 		target: [
 			Transcript show: 'Subdomain button clicked!'; cr.
-			self links: (self crawler searchSubDomains).
+			self links: (self crawler storage searchSubDomains).
 			self listMorph updateList: (self links)];
 		actionSelector: #value;
 		label: 'Filter Subdomains' font: self options smallerDefaultFont;

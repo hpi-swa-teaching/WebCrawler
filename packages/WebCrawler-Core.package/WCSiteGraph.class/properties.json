@@ -1,0 +1,15 @@
+{
+	"category" : "WebCrawler-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PAU 6/18/2020 10:41",
+	"instvars" : [
+		"domains",
+		"domainConnections" ],
+	"name" : "WCSiteGraph",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
