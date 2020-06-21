@@ -13,7 +13,8 @@
 		"secondLevelDomains",
 		"visitedCount",
 		"options",
-		"newLinks" ],
+		"newLinks",
+		"bloomFilter" ],
 	"name" : "WCLinkStorage",
 	"pools" : [
 		 ],

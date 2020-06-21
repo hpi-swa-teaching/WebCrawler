@@ -12,6 +12,6 @@ initialize
 		#uniqueUrls -> self defaultUniqueUrls .
 		#maintainSiteMap -> self defaultMaintainSiteMap . 
 		#maintainSiteGraph -> self defaultMaintainSiteGraph . 
-		#maintainVisited -> self defaultMaintainVisited . 
 		#substituteRelativeUrls -> self defaultSubstituteRelativeUrls . 
-		#beautifyLinks -> self defaultBeautifyLinks})
+		#beautifyLinks -> self defaultBeautifyLinks . 
+		#maintainBloomFilter -> self defaultMaintainBloomFilter})

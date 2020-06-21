@@ -1,11 +1,13 @@
 autocrawling
 selectMostRelevantLinks: anOrderedCollection
 
-	| selectedLinks |
+	| selectedLinks positionToAdd |
 	selectedLinks := OrderedCollection new.
-	self flag: #toDo. " select relevant links on a more profound basis "
 	anOrderedCollection size <= self options maxLinksToExtract
 		ifTrue: [^ anOrderedCollection].
-	1 to: self options maxLinksToExtract do: [:i | selectedLinks add: anOrderedCollection atRandom].
+	positionToAdd := 10.
+	self options maxLinksToExtract timesRepeat: [
+		selectedLinks add: (anOrderedCollection at: positionToAdd).
+		positionToAdd := ((positionToAdd + 10) \\ anOrderedCollection size) + 1].
 	"^ anOrderedCollection copyFrom: 1 to: self options maxLinksToExtract "
 	^ selectedLinks

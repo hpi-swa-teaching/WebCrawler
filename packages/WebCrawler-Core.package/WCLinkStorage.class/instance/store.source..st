@@ -5,16 +5,13 @@ store: anOrderedCollection source: aParentUrlString
 	processedLinks := self processLinks: anOrderedCollection parent: aParentUrlString.
 	
 	self options maintainSiteMap
-		ifTrue: [
-			self siteMap addLinks: processedLinks parent: aParentUrlString].
+		ifTrue: [self siteMap addLinks: processedLinks parent: aParentUrlString].
 	self options maintainSiteGraph
-		ifTrue: [
-			self siteGraph addLinks: processedLinks parent: aParentUrlString].
+		ifTrue: [self siteGraph addLinks: processedLinks parent: aParentUrlString].
+	self options maintainBloomFilter
+		ifTrue: [self bloomFilter addLinks: processedLinks].
 	
 	self newLinks: processedLinks.
 	
 	self updateSecondLevelDomains: processedLinks.
-	self options maintainVisited
-		ifTrue: [
-			processedLinks := processedLinks collect: [:link | link -> false]].
 	self links: self links, processedLinks

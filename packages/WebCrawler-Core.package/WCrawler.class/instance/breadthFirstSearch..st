@@ -4,7 +4,7 @@ breadthFirstSearch: aString
 	| url depth newPairs urlPair crawledLinks | 
 	self linkQueue: OrderedCollection new.
 	self options storeUniqueUrls: true.
-	self options maintainVisited: true.
+	self options maintainBloomFilter: true.
 	self storage applyNewOptions.
 	self linkQueue add: aString -> 1.
 	depth := 1.
@@ -18,12 +18,16 @@ breadthFirstSearch: aString
 		self reportStatus.
 		self crawl: url.
 		
-		crawledLinks := self storage newLinks reject: [:link | self storage isVisited: link].
-		crawledLinks := self selectMostRelevantLinks: crawledLinks.
-		self storage setVisited: crawledLinks.
+		self visitedCount: (self visitedCount + self storage newLinks size).
+		
+		crawledLinks := self selectMostRelevantLinks: self storage newLinks.
 		depth < self options maxRecursionDepth
 			ifTrue: [
 				newPairs := crawledLinks collect: [:link | link -> (depth + 1)].
 				self linkQueue addAll: newPairs]].
 	self reportStatus.
-	Transcript show: 'Crawling finished successfully!';cr
+	Transcript show: 'Crawling finished successfully!';cr.
+	Transcript show: 'AVERAGE STORE DURATION PER LINK: ', (self durationCounter / self linkCounter) asFloat;cr.
+	Transcript show: 'TOTAL STORE DURATION: ', self durationCounter;cr.
+	Transcript show: 'TOTAL LINK COUNT: ', self linkCounter;cr.
+	

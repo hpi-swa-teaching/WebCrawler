@@ -5,5 +5,8 @@ initialize
 	self fetcher: WCDocumentFetcher new.
 	self parser: WCDocumentParser new.
 	self storage: WCLinkStorage new.
+	self visitedCount: 0.
+	self durationCounter: 0.
+	self linkCounter: 0.
 	
 	self propagateNewOptions

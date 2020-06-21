@@ -2,11 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
-		"add:" : "PAU 5/21/2020 18:36",
+		"add:" : "PAU 6/21/2020 19:43",
 		"addAll:" : "PAU 5/21/2020 15:56",
+		"addLinks:" : "PAU 6/21/2020 19:59",
+		"bitCount" : "PAU 6/21/2020 18:39",
+		"bitCount:" : "PAU 6/21/2020 18:39",
 		"bloomFilterArray" : "PAU 5/21/2020 16:40",
 		"bloomFilterArray:" : "PAU 5/21/2020 16:39",
-		"includes:" : "PAU 5/21/2020 16:44",
-		"initialize" : "PAU 5/21/2020 14:30",
+		"fpPropability" : "PAU 6/21/2020 20:32",
+		"hashFunctions" : "PAU 6/21/2020 18:38",
+		"hashFunctions:" : "PAU 6/21/2020 18:38",
+		"initialize" : "PAU 6/21/2020 19:23",
+		"initialize:" : "PAU 6/21/2020 21:08",
 		"links" : "PAU 5/21/2020 14:32",
-		"links:" : "PAU 5/21/2020 14:32" } }
+		"links:" : "PAU 5/21/2020 14:32",
+		"mayInclude:" : "PAU 6/21/2020 19:42",
+		"sha" : "PAU 6/21/2020 18:37",
+		"sha:" : "PAU 6/21/2020 18:38" } }

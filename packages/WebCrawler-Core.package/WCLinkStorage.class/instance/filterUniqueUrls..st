@@ -1,10 +1,13 @@
 filtering
 filterUniqueUrls: anOrderedCollection
 
-	self options maintainVisited
+	self options maintainBloomFilter
 		ifTrue: [
-			^ anOrderedCollection reject: [:link | self links includes: link]]
+			^ anOrderedCollection reject: [:link | 
+				"(self bloomFilter mayInclude: link) = (self links includes: link)
+					ifFalse: [Transcript show: 'UNGLEICHHEIT UNGLEICHHEIT UNGLEICHHEIT!!!!!!';cr.
+						Transcript show: '    link: ',link,' bloom: ', (self bloomFilter mayInclude: link), ' links: ', (self links includes: link);cr.
+						self halt]."
+				self bloomFilter mayInclude: link]]
 		ifFalse: [
-			^ anOrderedCollection reject: [:link |
-				self links detect: [:linkAssoc | linkAssoc key = link] ifNone: [^ false].
-				true]]
+			^ anOrderedCollection reject: [:link | self links includes: link]]

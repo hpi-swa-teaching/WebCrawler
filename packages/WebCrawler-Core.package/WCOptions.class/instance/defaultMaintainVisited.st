@@ -1,4 +1,0 @@
-storing
-defaultMaintainVisited
-
-	^ false

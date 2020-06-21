@@ -12,7 +12,9 @@
 		"parser",
 		"process",
 		"storage",
-		"visitedCount" ],
+		"visitedCount",
+		"linkCounter",
+		"durationCounter" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],
