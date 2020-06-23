@@ -1,4 +1,4 @@
 parsing
 defaultIncludeSubdomains
 
-	^ false
+	^ true

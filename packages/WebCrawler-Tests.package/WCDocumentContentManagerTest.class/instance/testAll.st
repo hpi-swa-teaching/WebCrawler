@@ -1,4 +1,0 @@
-testing
-testAll
-
-	self testSubstituteRelativeUrls.

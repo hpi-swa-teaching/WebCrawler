@@ -1,13 +1,14 @@
 parsing
-evaluateLink: aHtmlEntity
+evaluateLink: aUrl
 
 	| link prefix secondLevelDomain |
-	link := aHtmlEntity getAttribute: 'href'.
+	link := aUrl.
 	"secondLevelDomain := self sourceUrl."
 	link isNil ifFalse: [
+		link := link reject: [:char | char = $\].
 		link := link withoutQuoting.
 		prefix := link upTo: $:.
-		(link size = 0 or: [('javascript*' match: link) or: [('fb-messenger*' match: link) or: [link asUrl scheme = 'mailto']]]) ifFalse:  [
+		(link size = 0 or: [prefix ~= 'http' and: [prefix ~= 'https']])ifFalse:  [
 			link := self replaceUTF8: link.
     			((link at: 1) ~=  $# or: [self options includeSiteInternalReferences]) ifTrue: [
 				secondLevelDomain := self extractSecondLevelDomain: link.

@@ -1,5 +1,5 @@
 accessing
-addLinks: anOrderedCollection forParent: aLink
+addLinks: anOrderedCollection parent: aLink
 
 	(self contains: aLink) ifFalse: [
 		self siteMap add: aLink -> OrderedCollection new].
