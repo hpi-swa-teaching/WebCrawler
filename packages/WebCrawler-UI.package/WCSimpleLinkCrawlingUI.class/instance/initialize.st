@@ -9,7 +9,7 @@ initialize
 		height: self options defaultWindowHeight.
 	
 
-	
+	self loading: false.
 	self crawler: WCrawler new.
 	self addUrlInputField.
 	self addCrawlButton.

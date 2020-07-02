@@ -1,4 +1,4 @@
 parsing
 defaultIncludeOutgoingDomains
 
-	^ false
+	^ true
