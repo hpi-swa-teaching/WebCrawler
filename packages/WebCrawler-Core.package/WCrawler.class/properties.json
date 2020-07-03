@@ -14,7 +14,8 @@
 		"storage",
 		"visitedCount",
 		"linkCounter",
-		"durationCounter" ],
+		"durationCounter",
+		"statusUpdateBlockClosures" ],
 	"name" : "WCrawler",
 	"pools" : [
 		 ],

@@ -8,12 +8,14 @@ initialize
 		width: self options defaultWindowWidth; 
 		height: self options defaultWindowHeight.
 	
-
 	self loading: false.
+	
 	self crawler: WCrawler new.
 	self addUrlInputField.
 	self addCrawlButton.
 	self addFilterButton.
+	self addSiteGraphButton.
+	self addClearButton.
 	self addListMorph.
 	self openInWorld
 	

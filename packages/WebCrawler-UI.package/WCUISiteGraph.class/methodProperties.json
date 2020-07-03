@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addAnimationButton" : "PAU 7/3/2020 09:53",
+		"addAutoCrawlButton" : "PAU 7/3/2020 10:14",
+		"animationButton" : "PAU 7/3/2020 09:52",
+		"animationButton:" : "PAU 7/3/2020 09:52",
+		"button" : "PAU 7/3/2020 08:00",
+		"button:" : "PAU 7/3/2020 08:00",
+		"crawler" : "PAU 7/3/2020 08:00",
+		"crawler:" : "PAU 7/3/2020 08:01",
+		"initialize" : "PAU 7/3/2020 09:52",
+		"options" : "PAU 7/3/2020 08:10",
+		"options:" : "PAU 7/3/2020 08:10",
+		"plugin" : "PAU 7/3/2020 08:00",
+		"plugin:" : "PAU 7/3/2020 08:00" } }

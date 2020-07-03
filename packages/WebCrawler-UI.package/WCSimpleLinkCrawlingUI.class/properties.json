@@ -15,7 +15,8 @@
 		"filterButton",
 		"listMorph",
 		"loading",
-		"loadingScreen" ],
+		"loadingScreen",
+		"clearButton" ],
 	"name" : "WCSimpleLinkCrawlingUI",
 	"pools" : [
 		 ],

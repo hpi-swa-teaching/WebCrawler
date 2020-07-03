@@ -1,4 +1,4 @@
 storing
 defaultMaintainBloomFilter
 
-	^ false
+	^ true

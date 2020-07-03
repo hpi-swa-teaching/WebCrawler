@@ -1,0 +1,18 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"plugin",
+		"button",
+		"crawler",
+		"options",
+		"animationButton" ],
+	"name" : "WCUISiteGraph",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

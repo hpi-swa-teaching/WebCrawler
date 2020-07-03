@@ -4,7 +4,7 @@
 	"instance" : {
 		"setUp" : "PAU 6/23/2020 12:35",
 		"testApplyNewOptions" : "PAU 6/23/2020 14:49",
-		"testBeautifyLinks" : "PAU 6/23/2020 15:47",
+		"testBeautifyLinks" : "PAU 6/26/2020 18:33",
 		"testExtract2ndLevelDomain" : "PAU 6/23/2020 14:57",
 		"testFilterUniqueUrls" : "PAU 6/23/2020 16:20",
 		"testStoreSource" : "PAU 6/23/2020 16:20",
