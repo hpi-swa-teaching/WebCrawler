@@ -1,4 +1,4 @@
 accessing
 visitedCount: aNumber
 
-	visitedCount :=  aNumber
+	visitedCount := aNumber

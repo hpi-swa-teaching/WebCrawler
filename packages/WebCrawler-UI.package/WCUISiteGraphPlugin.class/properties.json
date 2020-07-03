@@ -1,0 +1,20 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"vertices",
+		"edges",
+		"crawler",
+		"positionHashMap",
+		"activateDrawIterations",
+		"edgePlane",
+		"vertexPlane" ],
+	"name" : "WCUISiteGraphPlugin",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }

@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"modell",
 		"urlInputField",
 		"crawlButton",
 		"crawler",
@@ -13,7 +14,9 @@
 		"uiLinkFilter",
 		"filterButton",
 		"listMorph",
-		"model" ],
+		"loading",
+		"loadingScreen",
+		"clearButton" ],
 	"name" : "WCSimpleLinkCrawlingUI",
 	"pools" : [
 		 ],

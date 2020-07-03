@@ -1,0 +1,4 @@
+accessing
+linkCounter
+
+	^ linkCounter

@@ -1,0 +1,4 @@
+accessing
+repulsionFactor
+
+	^ 180

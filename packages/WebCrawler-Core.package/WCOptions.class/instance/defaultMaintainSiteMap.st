@@ -1,4 +1,4 @@
 storing
 defaultMaintainSiteMap
 
-	^ false
+	^ true

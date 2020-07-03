@@ -8,9 +8,12 @@
 	"instvars" : [
 		"links",
 		"options",
-		"bloomFilterArray" ],
+		"bloomFilterArray",
+		"sha",
+		"hashFunctions",
+		"bitCount" ],
 	"name" : "WCBloomFilter",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"type" : "variable" }

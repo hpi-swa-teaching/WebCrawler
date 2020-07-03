@@ -1,0 +1,16 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"index",
+		"edges",
+		"labelMorph" ],
+	"name" : "WCUIVertex",
+	"pools" : [
+		 ],
+	"super" : "CircleMorph",
+	"type" : "normal" }

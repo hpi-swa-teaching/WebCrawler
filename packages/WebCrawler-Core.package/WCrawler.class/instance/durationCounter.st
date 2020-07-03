@@ -1,0 +1,4 @@
+accessing
+durationCounter
+
+	^ durationCounter

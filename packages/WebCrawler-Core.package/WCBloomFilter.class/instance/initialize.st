@@ -1,5 +1,4 @@
 initialize-release
 initialize
 
-	self links: OrderedCollection new.
-	self bloomFilterArray: OrderedCollection new.
+	self initialize: (10 raisedTo: 4)

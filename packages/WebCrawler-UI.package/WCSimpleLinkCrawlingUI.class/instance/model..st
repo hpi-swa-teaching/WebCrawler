@@ -1,4 +1,4 @@
 accessing
 model: aModel
 
-	model := aModel
+	modell := aModel

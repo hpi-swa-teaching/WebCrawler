@@ -1,0 +1,4 @@
+graphUpdating
+stepTime
+
+	^ 80

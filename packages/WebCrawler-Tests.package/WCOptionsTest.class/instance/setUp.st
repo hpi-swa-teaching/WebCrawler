@@ -1,4 +1,4 @@
 initialize-release
 setUp
 
-	self object: WCOptionsTest new.
+	self object: WCOptions new.

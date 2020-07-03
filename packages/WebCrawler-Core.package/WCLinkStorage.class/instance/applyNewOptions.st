@@ -7,11 +7,8 @@ applyNewOptions
 	self options maintainSiteGraph
 		ifTrue: [self siteGraph isNil ifTrue: [self siteGraph: WCSiteGraph new]]
 		ifFalse: [self siteGraph: nil].
-	
-	self options maintainVisited
+	self options maintainBloomFilter
 		ifTrue: [
-			self links: (self links collect: [:link | (link isKindOf: Association) ifTrue: [link] ifFalse: [link -> false]]).
-			self visitedCount isNil ifTrue: [self visitedCount: 0]]
-		ifFalse: [
-			self links: (self links collect: [:link | (link isKindOf: Association) ifTrue: [link key] ifFalse: [link]]).
-			self visitedCount: nil]
+			| expectedNumberOfLinks |
+			expectedNumberOfLinks := self options maxLinksToExtract raisedTo: (self options maxRecursionDepth + 1).
+			self bloomFilter isNil ifTrue: [self bloomFilter: (WCBloomFilter new initialize: expectedNumberOfLinks)]]
