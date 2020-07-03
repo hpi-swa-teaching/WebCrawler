@@ -10,7 +10,8 @@
 		"button",
 		"crawler",
 		"options",
-		"animationButton" ],
+		"animationButton",
+		"abortButton" ],
 	"name" : "WCUISiteGraph",
 	"pools" : [
 		 ],

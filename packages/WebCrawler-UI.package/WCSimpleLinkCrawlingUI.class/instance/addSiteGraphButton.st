@@ -10,7 +10,8 @@ addSiteGraphButton
 		target: [
 			Transcript show: 'site graph button clicked'.
 			self uiSiteGraph: WCUISiteGraph new.
-			self uiSiteGraph crawler: self crawler.];
+			self uiSiteGraph crawler: self crawler.
+			self uiSiteGraph plugin graphUpdate value: OrderedCollection new];
 		actionSelector: #value;
 		label: 'Graph' font: self options defaultFont;
 		cornerStyle: #rounded;

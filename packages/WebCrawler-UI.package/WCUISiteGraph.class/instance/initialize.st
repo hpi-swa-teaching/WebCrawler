@@ -16,6 +16,7 @@ initialize
 	self openInWorld.
 	self addAutoCrawlButton.
 	self addAnimationButton.
-	self extent: (800@800)
+	self addAutoCrawAbortlButton.
+	self extent: (870@800)
 	
 	

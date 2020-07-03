@@ -8,7 +8,7 @@ addAutoCrawlButton
 		position: (self plugin position x + self plugin extent x + 30) @ (self plugin position y); 
 		target: [
 			Transcript show: 'site graph button clicked'.
-			self crawler startAutoCrawl: self crawler storage links first];
+			self crawler startAutoCrawl: self crawler storage links atRandom];
 		actionSelector: #value;
 		label: 'AutoCrawl' font: self options defaultFont;
 		cornerStyle: #rounded;
