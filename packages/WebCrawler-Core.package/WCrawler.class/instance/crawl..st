@@ -3,7 +3,7 @@ crawl: aUrlString
 
 	| startTime |
 	self fetcher fetch: aUrlString.
-	self parser parse: (self fetcher content) from: aUrlString.
+	self parser parse: (self fetcher documentContent) from: aUrlString.
 	startTime := DateAndTime now.
 	self storage store: self parser links source: aUrlString.
 	self durationCounter: self durationCounter + (DateAndTime now - startTime) asMilliSeconds.

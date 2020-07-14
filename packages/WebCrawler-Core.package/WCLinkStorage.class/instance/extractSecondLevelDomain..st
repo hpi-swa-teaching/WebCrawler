@@ -15,11 +15,12 @@ extractSecondLevelDomain: url
 	char := endOfDomain.
 	amountOfDots := 0.
 	startOfDomain := 0.
-	    [char > 1] whileTrue: 
-		[char := char-1. (url at: char) == $. 
-		ifTrue: 
-			[amountOfDots = 1 
-			ifTrue: [startOfDomain := char. char = 0] 
-			ifFalse: [amountOfDots := amountOfDots+1]]].
+	[char > 1] whileTrue: 
+        [char := char-1. (url at: char) == $. 
+        ifTrue: 
+            [amountOfDots = 1
+            ifTrue: [startOfDomain := char. char := 0] 
+            ifFalse: [amountOfDots := amountOfDots+1]].
+       (char > 0 and: [(url at: char) == $/]) ifTrue: [startOfDomain := char + 1. char = 0]].
 
 	^ url copyFrom: (startOfDomain+1) to: (endOfDomain -1).

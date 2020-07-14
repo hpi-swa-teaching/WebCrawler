@@ -1,4 +1,4 @@
-filtering
+searching
 searchForRegex: aRegex
 
-	^ self links select: [:link | (link matchesRegex: aRegex)]
+	^ self searchForRegex: aRegex in: self links

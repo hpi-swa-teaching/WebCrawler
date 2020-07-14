@@ -1,0 +1,16 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"plugin",
+		"crawler",
+		"parentUrl" ],
+	"name" : "WCUISiteMap",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

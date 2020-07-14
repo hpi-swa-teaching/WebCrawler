@@ -1,4 +1,4 @@
-filtering
+searching
 searchLinkSubstring: aString
 
 	^ self searchForRegex: '.*',(aString),'.*'.

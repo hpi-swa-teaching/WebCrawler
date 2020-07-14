@@ -1,4 +1,4 @@
 accessing
 attractionFactor
 
-	^ 0.1
+	^ 0.15

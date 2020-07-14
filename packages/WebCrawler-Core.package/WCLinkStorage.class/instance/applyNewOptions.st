@@ -10,5 +10,5 @@ applyNewOptions
 	self options maintainBloomFilter
 		ifTrue: [
 			| expectedNumberOfLinks |
-			expectedNumberOfLinks := self options maxLinksToExtract raisedTo: (self options maxRecursionDepth + 1).
+			expectedNumberOfLinks := self options defaultExpectedLinksPerSite raisedTo: (self options maxRecursionDepth + 1).
 			self bloomFilter isNil ifTrue: [self bloomFilter: (WCBloomFilter new initialize: expectedNumberOfLinks)]]
