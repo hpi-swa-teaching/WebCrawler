@@ -22,5 +22,6 @@ edgeUpdate: aCollection
 				self edges add: indexTo -> indexFrom -> line]
 			ifFalse: [
 				oldLineMorph value submorphs isEmpty 
-					ifFalse: [oldLineMorph value submorphs first contents: edge value asString]].
-		]
+					ifFalse: [
+						oldLineMorph value submorphs first contents: edge value asString.
+						oldLineMorph value borderWidth: 2 * (edge value log2 max: 1)]]]

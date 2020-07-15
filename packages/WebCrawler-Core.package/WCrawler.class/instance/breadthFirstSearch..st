@@ -15,7 +15,6 @@ breadthFirstSearch: aString
 		depth := urlPair value.
 		
 		Transcript show: 'crawling url: ', url;cr; show: 'depth: ', depth;cr.
-		self reportStatus.
 		self crawl: url.
 		
 		self visitedCount: (self visitedCount + self storage newLinks size).

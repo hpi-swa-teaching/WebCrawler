@@ -1,4 +1,4 @@
 accessing
 dampingFactor
 
-	^ 0.1
+	^ 0.05

@@ -15,6 +15,7 @@ hashPosition: aPoint
 						(x <= self positionHashMap rowCount and: [y <= self positionHashMap columnCount])
 							ifTrue: [self positionHashMap at: x at: y]
 							ifFalse: [OrderedCollection new]]).
-			Transcript show: 'new size: ', (self positionHashMap rowCount @ self positionHashMap columnCount);cr].
-	^ self clamp: hashed min: 1 asPoint max: self positionHashMap columnCount asPoint
+			Transcript show: 'new size: ', (self positionHashMap rowCount @ self positionHashMap columnCount);cr]."
+	^ self clamp: hashed min: 1 asPoint max: self positionHashMap rowCount @ self positionHashMap columnCount"
+	^ hashed max: 1 asPoint
 	

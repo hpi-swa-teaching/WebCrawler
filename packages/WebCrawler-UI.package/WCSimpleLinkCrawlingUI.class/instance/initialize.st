@@ -16,6 +16,7 @@ initialize
 	self addFilterButton.
 	self addSiteGraphButton.
 	self addClearButton.
+	self addSiteMapButton.
 	self addListMorph.
 	self openInWorld
 	

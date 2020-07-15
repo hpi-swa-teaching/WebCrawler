@@ -6,7 +6,7 @@ addClearButton
 
 	self clearButton: (PluggableButtonMorph new
 		color: self options color2;
-		position: self crawlButton position x @ (self crawlButton position y +( self height * 0.51)); 
+		position: self crawlButton position x @ (self crawlButton position y +( self height * 0.68)); 
 		target: [
 			Transcript show: 'clear button clicked'.
 			self crawler reset.
