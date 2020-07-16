@@ -1,0 +1,19 @@
+{
+	"category" : "WebCrawler-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"vertices",
+		"edges",
+		"edgePlane",
+		"vertexPlane",
+		"crawler",
+		"layers" ],
+	"name" : "WCUISiteMapPlugin",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }

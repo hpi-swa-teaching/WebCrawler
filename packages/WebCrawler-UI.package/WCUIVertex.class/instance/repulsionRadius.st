@@ -1,4 +1,4 @@
 accessing
 repulsionRadius
 
-	^ 250
+	^ 400

@@ -1,4 +1,4 @@
 accessing
 repulsionFactor
 
-	^ 180
+	^ 1200

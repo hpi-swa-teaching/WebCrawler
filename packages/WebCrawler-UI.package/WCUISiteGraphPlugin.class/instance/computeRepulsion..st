@@ -1,10 +1,12 @@
 graphUpdating
 computeRepulsion: aVertex
 
-	| repulsion dividend i |
+	| repulsion dividend i collusionCount collisions coulomb distance |
 	repulsion := 0@0.
 	dividend := self extent / self positionHashMapResolution.
+	collisions := Set new.
 	i := aVertex position x - aVertex repulsionRadius.
+	collusionCount := 0.
 	[i <= (aVertex position x + aVertex repulsionRadius)]
 		whileTrue: [
 			| j |
@@ -13,19 +15,19 @@ computeRepulsion: aVertex
 				whileTrue: [
 					| hashedPosition currentPosition |
 					currentPosition := i@j.
-					hashedPosition := self hashPosition: currentPosition.
-					hashedPosition := self clamp: hashedPosition min: 1 asPoint max: self positionHashMap columnCount asPoint.
+					hashedPosition := self hashPosition: currentPosition.					
 					(self positionHashMap at: hashedPosition x at: hashedPosition y) do: [:vertex |
-						| distance coulomb |
-						vertex index ~= aVertex index
-							ifTrue: ["
-								Transcript show: 'in hash stuff found another one! hp: ', hashedPosition, ' ownp: ', aVertex position, ' hisp: ', vertex position;cr."
-								distance := (aVertex position - vertex position) dotProduct: (aVertex position - vertex position).
-								distance := distance max: 0.001.
-								coulomb := 1 / distance."
-								Transcript show: 'now coulomb: ', coulomb;cr."
-								repulsion := repulsion + (coulomb * (aVertex position - vertex position))]].
+						vertex index ~= aVertex index ifTrue: [collisions add: vertex]].
 					j := j + dividend y].
 			i := i + dividend x].
-	^ repulsion
+	"self halt: 'now in active repulsion!'."
+	collusionCount := collisions size.
+	collisions do: [:vertex |
+		distance := (aVertex position - vertex position) dotProduct: (aVertex position - vertex position).
+		distance := distance.
+		distance := distance max: 0.001.
+		coulomb := 1 / distance.
+		repulsion := repulsion + (coulomb * (aVertex position - vertex position))].
+	
+	^ repulsion -> collusionCount
 			

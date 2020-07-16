@@ -1,4 +1,4 @@
 autocrawling
 defaultExpectedLinksPerSite
 
-	^ 100
+	^ 20

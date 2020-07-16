@@ -16,7 +16,11 @@
 		"listMorph",
 		"loading",
 		"loadingScreen",
-		"clearButton" ],
+		"clearButton",
+		"graphButton",
+		"uiSiteGraph",
+		"mapButton",
+		"uiSiteMap" ],
 	"name" : "WCSimpleLinkCrawlingUI",
 	"pools" : [
 		 ],

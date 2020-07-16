@@ -7,5 +7,5 @@ computeAttraction: aVertex
 		| adjacentVertex |
 		adjacentVertex := self vertices at: edge key."
 		attraction := attraction + (adjacentVertex position - aVertex position)"""
-		attraction := attraction + (adjacentVertex position - aVertex position) * ((edge value * self weightFactor) max: 1)""].
+		attraction := attraction + (adjacentVertex position - aVertex position) * ((self weightModificator: edge value) max: 1)""].
 	^ attraction

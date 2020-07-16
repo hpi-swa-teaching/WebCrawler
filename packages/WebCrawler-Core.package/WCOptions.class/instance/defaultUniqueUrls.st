@@ -1,4 +1,4 @@
 storing
 defaultUniqueUrls
 
-	^ false
+	^ true
