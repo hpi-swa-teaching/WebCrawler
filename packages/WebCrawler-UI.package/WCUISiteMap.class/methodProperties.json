@@ -2,9 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"abortButton" : "PAU 7/16/2020 10:17",
+		"abortButton:" : "PAU 7/16/2020 10:17",
+		"addAutoCrawAbortlButton" : "PAU 7/16/2020 10:16",
 		"crawler" : "PAU 7/15/2020 00:04",
 		"crawler:" : "PAU 7/15/2020 11:33",
-		"initialize:" : "PAU 7/16/2020 09:44",
+		"initialize:" : "PAU 7/16/2020 10:19",
+		"options" : "PAU 7/16/2020 10:18",
+		"options:" : "PAU 7/16/2020 10:18",
 		"parentUrl" : "PAU 7/15/2020 00:04",
 		"parentUrl:" : "PAU 7/15/2020 00:04",
 		"plugin" : "PAU 7/15/2020 00:04",

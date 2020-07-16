@@ -8,7 +8,9 @@
 	"instvars" : [
 		"plugin",
 		"crawler",
-		"parentUrl" ],
+		"parentUrl",
+		"abortButton",
+		"options" ],
 	"name" : "WCUISiteMap",
 	"pools" : [
 		 ],
