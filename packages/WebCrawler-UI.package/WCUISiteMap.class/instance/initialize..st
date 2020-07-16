@@ -7,9 +7,9 @@ initialize: aParentUrl
 		
 	
 	self plugin: (WCUISiteMapPlugin new initialize: aParentUrl).
-	self plugin extent: 600@700.
+	self plugin extent: 800@700.
 	self plugin scroller extent: self plugin extent.
 	self addMorphFront: self plugin.
 	self plugin position: self position + 50 asPoint.
 	self openInWorld.
-	self extent: (870@800)
+	self extent: (900@800)
