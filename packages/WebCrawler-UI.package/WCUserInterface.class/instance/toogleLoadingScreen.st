@@ -6,8 +6,8 @@ toogleLoadingScreen
 	self loading 
 		ifFalse: [
 			morph := Morph new.
-			morph width: self options defaultWindowWidth + 100; 
-			height: self options defaultWindowHeight;
+			morph width: self defaultWindowWidth + 100; 
+			height: self defaultWindowHeight;
 			position: self position;
 			beTransparent.
 			textMorph := TextMorph new contents: 'loading...'.

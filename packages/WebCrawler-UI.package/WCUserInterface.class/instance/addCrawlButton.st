@@ -5,11 +5,10 @@ addCrawlButton
 	textFieldSize := self urlInputField height.
 
 	self crawlButton: (PluggableButtonMorph new
-		color: self options color2;
 		position: self position + ((self width * 0.86) @ ((self height * 0.04) + 14)); 
 		target: [self startCrawling];
 		actionSelector: #value;
-		label: 'Go!' font: self options defaultFont;
+		label: 'Go!' font: self defaultFont;
 		cornerStyle: #rounded;
 		cornerRadius: textFieldSize / 5;
 		openInWorld;

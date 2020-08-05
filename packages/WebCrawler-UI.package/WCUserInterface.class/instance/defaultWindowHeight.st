@@ -1,0 +1,4 @@
+accessing
+defaultWindowHeight
+
+	^ 400

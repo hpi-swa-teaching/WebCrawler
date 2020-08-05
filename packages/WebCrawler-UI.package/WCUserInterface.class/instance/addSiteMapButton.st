@@ -5,7 +5,6 @@ addSiteMapButton
 	textFieldSize := self urlInputField height.
 
 	self mapButton: (PluggableButtonMorph new
-		color: self options color2;
 		position: self crawlButton position x @ (self crawlButton position y +( self height * 0.51)); 
 		target: [
 			Transcript show: 'site graph button clicked'.
@@ -15,7 +14,7 @@ addSiteMapButton
 					self uiSiteMap crawler: self crawler.
 					self uiSiteMap plugin treeUpdate value: OrderedCollection new]];
 		actionSelector: #value;
-		label: 'SiteMap' font: self options defaultFont;
+		label: 'SiteMap' font: self defaultFont;
 		cornerStyle: #rounded;
 		cornerRadius: textFieldSize / 5;
 		openInWorld;

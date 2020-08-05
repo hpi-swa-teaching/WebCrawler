@@ -5,14 +5,13 @@ addFilterButton
 	textFieldSize := self urlInputField height.
 
 	self filterButton: (PluggableButtonMorph new
-		color: self options color2;
 		position: self crawlButton position x @ (self crawlButton position y +( self height * 0.17)); 
 		target: [
 			Transcript show: 'filter button clicked'.
 			self uiLinkFilter: WCUILinkFilter new.
 			self uiLinkFilter crawler: self crawler.];
 		actionSelector: #value;
-		label: 'Filter' font: self options defaultFont;
+		label: 'Filter' font: self defaultFont;
 		cornerStyle: #rounded;
 		cornerRadius: textFieldSize / 5;
 		openInWorld;

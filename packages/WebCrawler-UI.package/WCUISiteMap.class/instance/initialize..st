@@ -4,8 +4,6 @@ initialize: aParentUrl
 	super initialize.
 	self setLabel: 'WebCrawler - SiteMap'.
 	self setWindowColor: Color darkGray.
-	self options: WCUIOptions new.
-	self options setDarkMode.
 		
 	
 	self plugin: (WCUISiteMapPlugin new initialize: aParentUrl).

@@ -4,8 +4,6 @@ initialize
 	super initialize.
 	self setLabel: 'WebCrawler - Vernetzungsgraph'.
 	self setWindowColor: Color darkGray.
-	self options: WCUIOptions new.
-	self options setDarkMode.
 		
 	
 	self plugin: WCUISiteGraphPlugin new.
