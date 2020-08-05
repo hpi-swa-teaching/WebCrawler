@@ -10,7 +10,7 @@
 		"computeRepulsion:" : "PAU 7/15/2020 23:08",
 		"crawler" : "PAU 7/3/2020 08:00",
 		"crawler:" : "PAU 7/3/2020 09:13",
-		"dampingFactor" : "PAU 7/16/2020 10:42",
+		"dampingFactor" : "PAU 8/5/2020 00:34",
 		"drawIteration" : "PAU 7/16/2020 01:01",
 		"edgePlane" : "PAU 7/3/2020 01:38",
 		"edgePlane:" : "PAU 7/3/2020 01:38",
@@ -32,7 +32,7 @@
 		"positionHashMap:" : "PAU 7/1/2020 13:32",
 		"positionHashMapResolution" : "PAU 7/1/2020 13:33",
 		"printHashedVertexIndices:" : "PAU 7/15/2020 22:15",
-		"repulsionFactor" : "PAU 7/15/2020 23:21",
+		"repulsionFactor" : "PAU 8/5/2020 08:36",
 		"showPositionHashMap" : "PAU 7/15/2020 19:22",
 		"startGraphDrawIterations" : "PAU 7/3/2020 08:30",
 		"step" : "PAU 7/3/2020 07:53",
@@ -43,4 +43,4 @@
 		"vertexUpdate:" : "PAU 7/15/2020 21:26",
 		"vertices" : "PAU 7/1/2020 11:02",
 		"vertices:" : "PAU 7/1/2020 10:59",
-		"weightModificator:" : "PAU 7/16/2020 10:46" } }
+		"weightModificator:" : "PAU 8/5/2020 08:36" } }

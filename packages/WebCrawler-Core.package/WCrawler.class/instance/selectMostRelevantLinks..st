@@ -9,5 +9,4 @@ selectMostRelevantLinks: anOrderedCollection
 	self options maxLinksToExtract timesRepeat: [
 		selectedLinks add: (anOrderedCollection at: positionToAdd).
 		positionToAdd := ((positionToAdd + 10) \\ anOrderedCollection size) + 1].
-	"^ anOrderedCollection copyFrom: 1 to: self options maxLinksToExtract "
 	^ selectedLinks
