@@ -2,12 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "PAU 6/23/2020 12:35",
+		"setUp" : "js 8/6/2020 19:43",
 		"testApplyNewOptions" : "PAU 6/23/2020 14:49",
-		"testBeautifyLinks" : "PAU 6/26/2020 18:33",
-		"testExtract2ndLevelDomain" : "PAU 6/23/2020 14:57",
+		"testBeautifyLinks" : "js 8/6/2020 19:43",
 		"testFilterUniqueUrls" : "PAU 6/23/2020 16:20",
+		"testSearchForRegex" : "js 8/6/2020 19:50",
+		"testSearchLinkSubstring" : "js 8/6/2020 20:05",
+		"testSearchOutgoingDomains" : "js 8/6/2020 20:03",
+		"testSearchSubDomains" : "js 8/6/2020 20:07",
 		"testStoreSource" : "PAU 6/23/2020 16:20",
 		"testSubstituteRelativeUrls" : "PAU 6/23/2020 16:21",
-		"testUpdateSecondLevelDomains" : "PAU 6/23/2020 16:21",
-		"testUtf8Dictionary" : "PAU 6/23/2020 16:22" } }
+		"testUpdateSecondLevelDomains" : "js 8/6/2020 19:43" } }

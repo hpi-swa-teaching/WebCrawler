@@ -6,4 +6,3 @@ initialize
 	self options: WCOptions new.
 	self secondLevelDomains: OrderedCollection new.
 	self secondLevelDomainDictionary: Dictionary new.
-	self createUtf8Dictionary.

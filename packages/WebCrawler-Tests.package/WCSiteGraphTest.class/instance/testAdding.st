@@ -6,6 +6,7 @@ testAdding
 	correct := OrderedCollection newFrom: {'google.com' . 'blank.org' . 'whattimeisitrightnow.com' . 'epstein.didnt'}.
 	
 	self object addLinks: urls parent: 'nytimes.com'.
+	Transcript show: self object domains.
 	allEqual := true.
 	correct do: [:link |
 		allEqual := allEqual & (self object domains includes: link)].

@@ -3,5 +3,5 @@
 		 },
 	"instance" : {
 		"setUp" : "js 5/21/2020 17:25",
-		"testAll" : "js 5/21/2020 18:07",
-		"testDocumentContent" : "PAU 6/23/2020 11:14" } }
+		"testDocumentContent" : "PAU 6/23/2020 11:14",
+		"testFetchedHTTPResponse" : "js 8/6/2020 18:13" } }

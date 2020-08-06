@@ -2,19 +2,11 @@ initialize-release
 testCorrectLinkExtraction
 
 	| fetcher correctLinks allEqual |
+
 	fetcher := WCDocumentFetcherMock new.
-	self object parse: fetcher content from: 'http://www.squeak.org'.
+	self object parse: fetcher from: 'http://www.squeak.org'.
 	correctLinks :=  OrderedCollection newFrom: 
-		{'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-macOS.dmg' . 
-		'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-Windows.zip' . 
-		'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-Linux.zip' . 
-		'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-All-in-One.zip' . 
-		'http://files.squeak.org/5.3/Squeak5.3-19435-32bit/Squeak5.3-19435-32bit-202003021730-ARMv6.zip' .
-		 'http://news.squeak.org/' . 'http://bugs.squeak.org/view_all_bug_page.php' . 'http://wiki.squeak.org/squeak' . 
-		'http://wiki.squeak.org/squeak' . 'http://news.squeak.org/' . 'http://news.squeak.org/' . 
-		'http://bugs.squeak.org/view_all_bug_page.php' . 'http://bugs.squeak.org/view_all_bug_page.php' . 
-		'http://map.squeak.org/' . 'http://source.squeak.org/inbox.html' . 
-		'http://files.squeak.org/various_images/OpenCroquet/' . 'http://wiki.squeak.org/squeak/5833' . 'http://wiki.squeak.org/squeak/5833'}.
+		{'http://www.squeak.org'. 'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-macOS.dmg'. 'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-Windows.zip'. 'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-202003021730-Linux.zip'. 'http://files.squeak.org/5.3/Squeak5.3-19435-64bit/Squeak5.3-19435-64bit-All-in-One.zip'. 'http://files.squeak.org/5.3/Squeak5.3-19435-32bit/Squeak5.3-19435-32bit-202003021730-ARMv6.zip'. 'https://raw.githubusercontent.com/squeak-smalltalk/squeak-app/squeak-trunk/release-notes/5.3'. 'http://news.squeak.org/'. 'http://bugs.squeak.org/view_all_bug_page.php'. 'https://shop.spreadshirt.com/Squeak/'. 'http://wiki.squeak.org/squeak'. 'http://wiki.squeak.org/squeak'. 'http://forum.world.st/Squeak-f45487.html'. 'http://forum.world.st/Squeak-f45487.html'. 'http://forum.world.st/Squeak-Beginners-f107673.html'. 'http://forum.world.st/Squeak-Dev-f45488.html'. 'http://forum.world.st/Squeak-VM-f104410.html'. 'http://lists.squeakfoundation.org'. 'http://news.squeak.org/'. 'http://news.squeak.org/'. 'http://bugs.squeak.org/view_all_bug_page.php'. 'http://bugs.squeak.org/view_all_bug_page.php'. 'http://forum.world.st/Squeak-Dev-f45488.html'. 'http://ss3.gemtalksystems.com/'. 'http://ss3.gemtalksystems.com/'. 'http://map.squeak.org/'. 'http://squeaksource.com/'. 'https://github.com/hpi-swa/Squot'. 'https://github.com/hpi-swa/Squot'. 'https://github.com/hpi-swa/Squot'. 'https://github.com/dalehenrich/filetree#squeak'. 'https://github.com/squeak-smalltalk/squeak-tonel/tree/squeak'. 'https://hal.inria.fr/inria-00441576/document'. 'https://hal.inria.fr/inria-00441576/document'. 'http://www.amazon.com/Squeak-Open-Personal-Computing-Multimedia/dp/0130280917'. 'http://www.amazon.com/Squeak-Open-Personal-Computing-Multimedia/dp/0130280917'. 'http://www.amazon.com/Squeak-Object-Oriented-Design-Multimedia-Applications/dp/0130280283'. 'http://www.amazon.com/Squeak-Object-Oriented-Design-Multimedia-Applications/dp/0130280283'. 'https://archive.org/details/byte-magazine-1981-08'. 'https://archive.org/details/byte-magazine-1981-08'. 'http://source.squeak.org/inbox.html'. 'http://babelsberg.github.io/babelsberg-s'. 'http://babelsberg.github.io/babelsberg-s'. 'https://github.com/dalehenrich/metacello-work'. 'https://en.wikipedia.org/wiki/Croquet_Project'. 'https://en.wikipedia.org/wiki/Croquet_Project'. 'http://files.squeak.org/various_images/OpenCroquet/'. 'http://www.squeakland.org/'. 'http://www.squeakland.org/'. 'http://wiki.squeak.org/squeak/5833'. 'http://wiki.squeak.org/squeak/5833'. 'https://www.raspberrypi.org/learning/getting-started-with-scratch/'. 'http://forum.world.st/Squeak-f45487.html'. 'https://twitter.com/squeaksmalltalk'. 'https://www.linkedin.com/groups?gid=98736'. 'https://github.com/squeak-smalltalk'.}.
 	allEqual := true.
 	1 to: self object links size do: [:i |
 		allEqual := allEqual & ((self object links at: i) = (correctLinks at: i))].

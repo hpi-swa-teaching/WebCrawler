@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "js 5/21/2020 17:25",
-		"testAll" : "PAU 6/23/2020 12:05",
-		"testCorrectLinkExtraction" : "PAU 6/23/2020 12:29",
-		"testEvaluateLink" : "PAU 6/23/2020 12:21" } }
+		"testCorrectLinkExtraction" : "js 8/6/2020 18:44",
+		"testEvaluateLink" : "PAU 6/23/2020 12:21",
+		"testExtract2ndLevelDomain" : "js 8/6/2020 19:39",
+		"testReplaceUTF8" : "js 8/6/2020 18:49" } }

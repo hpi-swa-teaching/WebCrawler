@@ -10,5 +10,5 @@
 	"name" : "WCDocumentFetcherMock",
 	"pools" : [
 		 ],
-	"super" : "WCDocumentFetcher",
+	"super" : "Object",
 	"type" : "normal" }

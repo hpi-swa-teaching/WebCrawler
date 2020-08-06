@@ -15,7 +15,8 @@
 		"options",
 		"newLinks",
 		"bloomFilter",
-		"secondLevelDomainDictionary" ],
+		"secondLevelDomainDictionary",
+		"parser" ],
 	"name" : "WCLinkStorage",
 	"pools" : [
 		 ],
