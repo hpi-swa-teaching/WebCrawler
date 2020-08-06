@@ -2,12 +2,11 @@ initialize-release
 initialize
 
 	super initialize.
-	self options: WCUIOptions new.
 	self balloonText: 'enter url here!';
-		borderStyle: (BorderStyle width: 3 color: self options color4);
+		borderStyle: (BorderStyle width: 3 color: Color veryDarkGray);
 		askBeforeDiscardingEdits: false;
 		vScrollBarPolicy: #never;
 		hScrollBarPolicy: #never.
-	self textMorph beAllFont: self options defaultFont;
-		margins: self options defaultInputFieldMargins;
+	self textMorph beAllFont: self defaultFont;
+		margins: self defaultInputFieldMargins;
 		contents: ''.

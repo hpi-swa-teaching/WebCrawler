@@ -1,0 +1,4 @@
+accessing
+repulsionRadius
+
+	^ 8

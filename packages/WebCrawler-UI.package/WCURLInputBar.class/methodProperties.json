@@ -4,8 +4,9 @@
 	"instance" : {
 		"contents" : "PAU 6/2/2020 15:59",
 		"crAction:" : "PAU 6/2/2020 15:49",
-		"drawBalloonTextOn:" : "PAU 6/2/2020 15:58",
-		"initialize" : "PAU 6/2/2020 16:06",
-		"options" : "PAU 5/25/2020 20:34",
-		"options:" : "PAU 5/25/2020 20:34",
-		"setBalloonText:" : "js 6/4/2020 18:30" } }
+		"defaultFont" : "PAU 8/5/2020 14:51",
+		"defaultInputFieldMargins" : "PAU 8/5/2020 14:53",
+		"drawBalloonTextOn:" : "PAU 8/5/2020 14:47",
+		"initialize" : "PAU 8/5/2020 14:54",
+		"setBalloonText:" : "js 6/4/2020 18:30",
+		"smallerDefaultFont" : "PAU 8/5/2020 14:52" } }

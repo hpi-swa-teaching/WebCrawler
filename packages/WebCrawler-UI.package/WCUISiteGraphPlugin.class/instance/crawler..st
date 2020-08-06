@@ -1,4 +1,6 @@
 accessing
 crawler: anObject
+
 	crawler := anObject.
-	anObject executeOnUpdate: self graphUpdate
+	siteGraph := anObject siteGraph.
+	anObject executeOnUpdate: self graphUpdate.

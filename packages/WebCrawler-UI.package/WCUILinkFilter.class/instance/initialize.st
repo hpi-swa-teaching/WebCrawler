@@ -5,8 +5,6 @@ initialize
 	self setLabel: 'WebCrawler - Filter'.
 	self setWindowColor: Color darkGray.
 	self extent: (600@800).
-	self options: WCUIOptions new.
-	self options setDarkMode.
 	
 	self addSubstringInputField.
 	self addSubstringButton.

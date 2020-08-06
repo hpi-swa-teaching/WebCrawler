@@ -2,17 +2,13 @@ initialize-release
 initialize: aParentUrl
 
 	super initialize.
-	self setLabel: 'WebCrawler - SiteMap'.
-	self setWindowColor: Color darkGray.
-	self options: WCUIOptions new.
-	self options setDarkMode.
-		
-	
-	self plugin: (WCUISiteMapPlugin new initialize: aParentUrl).
-	self plugin extent: 800@700.
+	self setLabel: 'WebCrawler - SiteMap';
+		plugin: 
+			(WCUISiteMapPlugin new initialize: aParentUrl;
+				extent: self defaultPluginSize;
+				position: self position + self defaultPluginPadding);
+		addMorphFront: self plugin;
+		addAutoCrawAbortlButton;
+		openInWorld;
+		extent: self defaultWindowSize.
 	self plugin scroller extent: self plugin extent.
-	self addMorphFront: self plugin.
-	self plugin position: self position + 50 asPoint.
-	self addAutoCrawAbortlButton.
-	self openInWorld.
-	self extent: (1070@800)

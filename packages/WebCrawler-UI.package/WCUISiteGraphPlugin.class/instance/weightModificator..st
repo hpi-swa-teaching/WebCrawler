@@ -1,4 +1,4 @@
 accessing
 weightModificator: aNumber
 
-	^ (aNumber log2 max: 1) * 0.35
+	^ (aNumber log2 * 0.37) max: 1

@@ -7,6 +7,6 @@ drawBalloonTextOn: aCanvas
 		do: [ : err | 'error in balloonText' ]) ifNotNil:
 		[ : text | aCanvas
 			drawString: text
-			in: (self innerBounds insetBy: (self options defaultInputFieldMargins +self borderStyle width))
-			font: (self options defaultFont)
+			in: (self innerBounds insetBy: (self defaultInputFieldMargins +self borderStyle width))
+			font: (self defaultFont)
 			color: (self userInterfaceTheme balloonTextColor ifNil: [Color gray: 0.7]) ]

@@ -1,4 +1,4 @@
-graphUpdating
+positionHashing
 hashVertex: aWCUIVertex
 
 	| hashIndex |

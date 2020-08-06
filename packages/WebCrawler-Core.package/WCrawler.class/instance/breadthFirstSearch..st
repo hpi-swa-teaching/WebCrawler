@@ -13,8 +13,6 @@ breadthFirstSearch: aString
 		urlPair := self linkQueue removeFirst.
 		url := urlPair key.
 		depth := urlPair value.
-		
-		Transcript show: 'crawling url: ', url;cr; show: 'depth: ', depth;cr.
 		self crawl: url.
 		
 		self visitedCount: (self visitedCount + self storage newLinks size).
@@ -25,8 +23,4 @@ breadthFirstSearch: aString
 				newPairs := crawledLinks collect: [:link | link -> (depth + 1)].
 				self linkQueue addAll: newPairs]].
 	self reportStatus.
-	Transcript show: 'Crawling finished successfully!';cr.
-	Transcript show: 'AVERAGE STORE DURATION PER LINK: ', (self durationCounter / self linkCounter) asFloat;cr.
-	Transcript show: 'TOTAL STORE DURATION: ', self durationCounter;cr.
-	Transcript show: 'TOTAL LINK COUNT: ', self linkCounter;cr.
 	

@@ -4,13 +4,12 @@ addAutoCrawlButton
 	| buttonHeight |
 	buttonHeight := 60.
 	self button: (PluggableButtonMorph new
-		color: self options color2;
 		position: (self plugin position x + self plugin extent x + 30) @ (self plugin position y); 
 		target: [
 			Transcript show: 'site graph button clicked'.
 			self crawler startAutoCrawl: self crawler storage links atRandom];
 		actionSelector: #value;
-		label: 'AutoCrawl' font: self options defaultFont;
+		label: 'AutoCrawl' font: self defaultFont;
 		cornerStyle: #rounded;
 		cornerRadius: buttonHeight / 5;
 		openInWorld;

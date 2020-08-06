@@ -11,7 +11,8 @@
 		"crawler",
 		"options",
 		"animationButton",
-		"abortButton" ],
+		"abortButton",
+		"lastButtonStartPosition" ],
 	"name" : "WCUISiteGraph",
 	"pools" : [
 		 ],

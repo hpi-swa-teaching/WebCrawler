@@ -1,4 +1,4 @@
-initialize-release
+positionHashing
 positionHashMapResolution
 
 	^ 20
