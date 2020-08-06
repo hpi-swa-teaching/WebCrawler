@@ -12,7 +12,8 @@
 		"positionHashMap",
 		"activateDrawIterations",
 		"edgePlane",
-		"vertexPlane" ],
+		"vertexPlane",
+		"siteGraph" ],
 	"name" : "WCUISiteGraphPlugin",
 	"pools" : [
 		 ],

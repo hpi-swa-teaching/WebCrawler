@@ -2,19 +2,15 @@ initialize-release
 initialize
 
 	super initialize.
-	self setLabel: 'WebCrawler - Vernetzungsgraph'.
-	self setWindowColor: Color darkGray.
-		
-	
-	self plugin: WCUISiteGraphPlugin new.
-	self plugin extent: 600@700.
+	self setLabel: 'WebCrawler - Vernetzungsgraph';
+		plugin: 
+			(WCUISiteGraphPlugin new extent: self defaultPluginSize;
+				position: self position + self defaultPluginPadding);
+		addMorphFront: self plugin;
+		openInWorld;
+		addAutoCrawlButton;
+		addAnimationButton;
+		addAutoCrawAbortButton;
+		extent: self defaultWindowSize;
+		lastButtonStartPosition: (self plugin position x + self plugin extent x + self buttonPadding) @ self defaultPluginPadding.
 	self plugin scroller extent: self plugin extent.
-	self addMorphFront: self plugin.
-	self plugin position: self position + 50 asPoint.
-	self openInWorld.
-	self addAutoCrawlButton.
-	self addAnimationButton.
-	self addAutoCrawAbortlButton.
-	self extent: (870@800)
-	
-	
