@@ -1,0 +1,1 @@
+This class acts as a System window container for SiteGraphPlugin

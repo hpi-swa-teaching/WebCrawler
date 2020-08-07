@@ -1,4 +1,4 @@
 initialize-release
 defaultScrollerSize
 
-	^ 600@700
+	^ 600 @ 700

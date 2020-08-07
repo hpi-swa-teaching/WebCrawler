@@ -1,25 +1,21 @@
 accessing
 extractSecondLevelDomain: url
 
-	| startOfDomain endOfDomain char amountOfDots |
-
-	char := 0.
-	endOfDomain := 0.
-	[char < url size] whileTrue: 
-		[char := char+1 .(url at: char) == $/ 
-		ifTrue: [
-			(char > 1 and: [((url at: char-1) == $/) | ((url at: char-1) == $:)])
-				ifFalse: [endOfDomain := char. char := url size]]].
-	endOfDomain = 0 ifTrue: [endOfDomain := char + 1].
-
-	char := endOfDomain.
-	amountOfDots := 0.
-	startOfDomain := 0.
-	    [char > 1] whileTrue: 
-		[char := char-1. (url at: char) == $. 
-		ifTrue: 
-			[amountOfDots = 1 
-			ifTrue: [startOfDomain := char. char = 0] 
-			ifFalse: [amountOfDots := amountOfDots+1]]].
-
-	^ url copyFrom: (startOfDomain+1) to: (endOfDomain -1).
+	| secondLevelDomain indexOfPoint lastIndexOfPoint |
+	secondLevelDomain := url.
+	(secondLevelDomain findString: 'http://') = 1 ifTrue: [
+		secondLevelDomain := secondLevelDomain copyFrom: 8 to: secondLevelDomain size].
+	(secondLevelDomain findString: 'https://') = 1 ifTrue: [
+		secondLevelDomain := secondLevelDomain copyFrom: 9 to: secondLevelDomain size].
+	(secondLevelDomain findString: 'www.') = 1 ifTrue: [
+		secondLevelDomain := secondLevelDomain copyFrom: 5 to: secondLevelDomain size].
+	secondLevelDomain := secondLevelDomain upTo: $/.
+	secondLevelDomain := secondLevelDomain upTo: $&.
+	secondLevelDomain := secondLevelDomain upTo: $?.
+	indexOfPoint := secondLevelDomain indexOf: $..
+	lastIndexOfPoint := 0.
+	[(secondLevelDomain indexOf: $. startingAt: (indexOfPoint + 1)) ~= 0]
+		whileTrue: [
+			lastIndexOfPoint := indexOfPoint.
+			indexOfPoint := secondLevelDomain indexOf: $. startingAt: (indexOfPoint + 1)].
+	^ secondLevelDomain copyFrom: lastIndexOfPoint + 1 to: secondLevelDomain size

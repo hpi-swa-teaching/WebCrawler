@@ -1,0 +1,1 @@
+This class acts as a System Window container for the SiteMapPlugin

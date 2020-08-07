@@ -1,4 +1,4 @@
 accessing
 defaultWindowSize
 
-	^  (1070@800)
+	^  1070 @ 800

@@ -1,4 +1,4 @@
 accessing
 defaultPluginSize
 
-	^  800@700
+	^ 800 @ 700

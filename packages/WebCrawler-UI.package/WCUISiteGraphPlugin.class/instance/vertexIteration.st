@@ -1,11 +1,9 @@
 graphUpdating
 vertexIteration
 
-	| totalDisplacement displacement |
-	totalDisplacement := 0.
-	self vertices do: [:vertex |
+	| displacement |
+	^ self vertices inject: 0 into: [:totalDisplacement :vertex |
 		displacement := self computeDisplacement: vertex.
-		totalDisplacement := totalDisplacement + displacement x abs + displacement y abs.
 		self updateVertexHash: vertex displacement: displacement.
-		vertex position: vertex position + displacement].
-	^ totalDisplacement
+		vertex position: vertex position + displacement.
+		totalDisplacement + displacement x abs + displacement y abs]

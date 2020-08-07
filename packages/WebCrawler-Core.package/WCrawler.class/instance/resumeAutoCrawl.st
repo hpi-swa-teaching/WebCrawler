@@ -1,4 +1,4 @@
 autocrawling
 resumeAutoCrawl
 
-	self process: [self breadthFirstSearch: self linkQueue removeFirst] fork
+	self startAutoCrawl: self linkQueue removeFirst key

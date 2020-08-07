@@ -1,19 +1,9 @@
 initialize-release
 addAutoCrawAbortlButton
 
-	| buttonHeight |
-	buttonHeight := 60.
-	self abortButton: (PluggableButtonMorph new
-		position: (self plugin position x + self plugin extent x + 30) @ (self plugin position y); 
-		target: [
-			Transcript show: 'abort button clicked'.
-			self crawler process terminate];
-		actionSelector: #value;
-		label: 'Abort AutoCrawl' font: self defaultFont;
-		cornerStyle: #rounded;
-		cornerRadius: buttonHeight / 5;
-		openInWorld;
-		yourself).
+	self abortButton: (WCUIButton new initialize: 'Abort AutoCrawl' 
+		target: [self crawler abortAutoCrawling]).
+	self abortButton position: self position + self lastButtonStartPosition.
+	self addMorphFront: self abortButton.
+	self lastButtonStartPosition: self lastButtonStartPosition + (0@(self abortButton extent y + self buttonPadding))
 	
-	self abortButton extent: self abortButton extent x @ buttonHeight.
-	self addMorphFront: self abortButton

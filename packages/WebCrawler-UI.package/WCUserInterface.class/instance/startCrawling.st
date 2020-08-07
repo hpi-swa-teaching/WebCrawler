@@ -11,6 +11,7 @@ startCrawling
 			self toogleLoadingScreen.
 			self crawler asyncCrawl: (self fillHTTPS: url) callback: [
 				Transcript show: self crawler storage newLinks.
+				self urlInputField contents: (self fillHTTPS: url).
 				self listMorph updateList: self crawler storage newLinks.
 				self toogleLoadingScreen]].
 	

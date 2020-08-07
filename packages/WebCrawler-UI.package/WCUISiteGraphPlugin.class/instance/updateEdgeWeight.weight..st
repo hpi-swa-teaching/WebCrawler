@@ -1,7 +1,7 @@
 graphUpdating
 updateEdgeWeight: anEdgeMorph weight: aNumber
 
-	anEdgeMorph value submorphs isEmpty 
+	anEdgeMorph submorphs isEmpty 
 		ifFalse: [
-			anEdgeMorph value submorphs first contents: aNumber asString.
-			anEdgeMorph value borderWidth: (self getEdgeLineWidth: aNumber)]
+			anEdgeMorph submorphs first contents: aNumber asString.
+			anEdgeMorph borderWidth: (self getEdgeLineWidth: aNumber)]

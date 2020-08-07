@@ -1,11 +1,12 @@
 graphUpdating
 edgeIteration
 
+	| vertexFrom vertexTo edgeMorph |
 	self edges do: [:edge |
-		| vertexFrom vertexTo |
-		vertexFrom := self vertices at: edge key key.
-		vertexTo := self vertices at: edge key value.
-		edge value verticesAt: 1 put: vertexFrom center.
-		edge value verticesAt: 2 put: vertexTo center.
-		edge value submorphs isEmpty 
-			ifFalse: [edge value submorphs first position: edge value center]]
+		vertexFrom := edge key key.
+		vertexTo := edge key value.
+		edgeMorph := edge value.
+		edgeMorph verticesAt: 1 put: vertexFrom center;
+			verticesAt: 2 put: vertexTo center.
+		edgeMorph submorphs isEmpty 
+			ifFalse: [edgeMorph submorphs first position: edge value center]]

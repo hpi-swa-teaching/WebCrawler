@@ -1,4 +1,4 @@
 accessing
 minimumDisplacementThreshold
 
-	^ 0.7 * self vertices size
+	^ 0.8 * self vertices size

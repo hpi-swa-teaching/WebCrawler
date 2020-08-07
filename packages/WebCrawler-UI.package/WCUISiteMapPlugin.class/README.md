@@ -1,0 +1,1 @@
+This class represents the graphical visualization of the site map.
