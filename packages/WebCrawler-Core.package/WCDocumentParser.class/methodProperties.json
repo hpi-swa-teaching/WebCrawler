@@ -4,18 +4,18 @@
 	"instance" : {
 		"configuration" : "PAU 5/11/2020 14:47",
 		"configuration:" : "PAU 5/11/2020 14:48",
+		"createUtf8Dictionary" : "ar 8/7/2020 15:17",
 		"documentRoot" : "PAU 5/11/2020 14:40",
 		"documentRoot:" : "PAU 5/11/2020 14:39",
 		"evaluateLink:" : "ar 8/7/2020 14:49",
 		"extractRelevantAuthority:" : "ar 8/7/2020 14:36",
-		"initialize" : "PAU 6/23/2020 11:39",
+		"initialize" : "ar 8/7/2020 15:17",
 		"links" : "PAU 5/11/2020 16:03",
 		"links:" : "PAU 5/11/2020 16:03",
 		"options" : "PAU 5/17/2020 16:01",
 		"options:" : "PAU 5/17/2020 16:00",
 		"parse:from:" : "ar 8/7/2020 14:36",
-		"replaceUTF8:" : "js 6/4/2020 19:22",
+		"replaceUTF8:" : "ar 8/7/2020 15:12",
 		"sourceUrl" : "ar 5/22/2020 00:52",
 		"sourceUrl:" : "ar 5/22/2020 00:52",
-		"traverseDocumentTree:" : "ar 8/7/2020 13:53",
-		"utf8dictionary" : "js 6/4/2020 19:11" } }
+		"traverseDocumentTree:" : "ar 8/7/2020 13:53" } }

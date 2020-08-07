@@ -2,5 +2,5 @@ initialize-release
 initialize
 
 	self links: OrderedCollection new.
-	self utf8dictionary.
+	self createUtf8Dictionary.
 	self options: WCOptions new
