@@ -1,8 +1,8 @@
 storing
 updateSecondLevelDomains: anOrderedCollection
 
+	| relevantAuthority |
 	anOrderedCollection do: [:link | 
-		| secondLevelDomain |
-		secondLevelDomain := self parser extractRelevantAuthority: link.
-		(self secondLevelDomains includes: secondLevelDomain)
-			ifFalse: [self secondLevelDomains add: secondLevelDomain]]
+		relevantAuthority := self parser extractRelevantAuthority: link.
+		(self secondLevelDomains includes: relevantAuthority)
+			ifFalse: [self secondLevelDomains add: relevantAuthority]]
