@@ -2,5 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "PAU 5/15/2020 11:49",
-		"testUrlCrawling" : "js 8/6/2020 20:33" } }
+		"correctLinkExample" : "PAU 8/7/2020 20:29",
+		"correctLinks" : "PAU 8/7/2020 20:28",
+		"correctLinks:" : "PAU 8/7/2020 20:28",
+		"setUp" : "PAU 8/7/2020 20:28",
+		"testAddLinksToQueue" : "PAU 8/7/2020 21:14",
+		"testCreateRobotTXTUrls" : "PAU 8/7/2020 20:56",
+		"testObserverMechanismus" : "PAU 8/7/2020 20:42",
+		"testRobotTXTEvaluation" : "PAU 8/7/2020 21:08",
+		"testSelectMostRelevantLinks" : "PAU 8/7/2020 21:03",
+		"testUniqueUrlFiltering" : "PAU 8/7/2020 20:59",
+		"testUrlCrawling" : "PAU 8/7/2020 20:45" } }

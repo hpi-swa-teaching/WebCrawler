@@ -2,8 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "js 5/21/2020 17:25",
-		"testCorrectLinkExtraction" : "js 8/6/2020 18:44",
-		"testEvaluateLink" : "PAU 6/23/2020 12:21",
+		"correctLinkExample" : "PAU 8/7/2020 19:49",
+		"correctLinks" : "PAU 8/7/2020 19:50",
+		"correctLinks:" : "PAU 8/7/2020 19:50",
+		"setUp" : "PAU 8/7/2020 19:52",
+		"testAuthorityExtraction" : "PAU 8/7/2020 20:00",
+		"testCorrectLinkEvaluationInput" : "PAU 8/7/2020 19:54",
+		"testCorrectLinkExtraction" : "PAU 8/7/2020 19:51",
 		"testExtractRelevantAuthority" : "ar 8/7/2020 14:47",
-		"testReplaceUTF8" : "js 8/6/2020 18:49" } }
+		"testIllegalLinkInput" : "PAU 8/7/2020 19:53",
+		"testOnlyOutgoingDomains" : "PAU 8/7/2020 19:56",
+		"testOnlySubdomains" : "PAU 8/7/2020 19:57",
+		"testOutgoingAndSubdomainsBlocked" : "PAU 8/7/2020 19:57",
+		"testReplaceUTF8" : "PAU 8/7/2020 19:57",
+		"testUrlPrefixSuffixRemoval" : "PAU 8/7/2020 20:32" } }
