@@ -8,8 +8,7 @@ This WebCrawler package currently supports basic web crawling through a given li
 
 To start the link crawl ui, use this example:
 ```
-w := WCSimpleLinkCrawlingUI new.
-w openInWorld.
+WCUserInterface new
 ```
 
 ## Usage (Core)
