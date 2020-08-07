@@ -2,7 +2,7 @@ storing
 store: anOrderedCollection source: aParentUrlString
 
 	| processedLinks parentUrl |
-	parentUrl := self parser extractSecondLevelDomain: aParentUrlString.
+	parentUrl := self parser extractRelevantAuthority: aParentUrlString.
 	processedLinks := self processLinks: anOrderedCollection parent: aParentUrlString.
 	(self secondLevelDomainDictionary includesKey: parentUrl)
 					ifFalse: [self secondLevelDomainDictionary at: parentUrl put: aParentUrlString].
@@ -19,7 +19,7 @@ store: anOrderedCollection source: aParentUrlString
 			outgoingDomains := self searchOutgoingDomainsFor: aParentUrlString in: processedLinks.
 			outgoingDomains := outgoingDomains collect: [:domain | 
 				| outgoingSecondLevel |
-				outgoingSecondLevel := self parser extractSecondLevelDomain: domain.
+				outgoingSecondLevel := self parser extractRelevantAuthority: domain.
 				(self secondLevelDomainDictionary includesKey: outgoingSecondLevel)
 					ifFalse: [self secondLevelDomainDictionary at: outgoingSecondLevel put: domain].
 				outgoingSecondLevel].

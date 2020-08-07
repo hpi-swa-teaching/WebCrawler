@@ -1,5 +1,5 @@
 storing
-extractSecondLevelDomain: url
+extractRelevantAuthority: url
 
 	| startOfDomain endOfDomain char amountOfDots |
 

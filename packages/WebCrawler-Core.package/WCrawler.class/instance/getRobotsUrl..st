@@ -2,5 +2,5 @@ crawling
 getRobotsUrl: anUrlString
 
 	| mainUrl |
-	mainUrl := self parser extractSecondLevelDomain: anUrlString.
+	mainUrl := self parser extractRelevantAuthority: anUrlString.
 	^ 'http://www.', mainUrl, '/robots.txt'

@@ -1,17 +1,13 @@
 accessing
-extractSecondLevelDomain: url
+extractRelevantAuthority: anUrl
 
 	| secondLevelDomain indexOfPoint lastIndexOfPoint |
-	secondLevelDomain := url.
+	secondLevelDomain := anUrl.
 	(secondLevelDomain findString: 'http://') = 1 ifTrue: [
 		secondLevelDomain := secondLevelDomain copyFrom: 8 to: secondLevelDomain size].
 	(secondLevelDomain findString: 'https://') = 1 ifTrue: [
 		secondLevelDomain := secondLevelDomain copyFrom: 9 to: secondLevelDomain size].
-	(secondLevelDomain findString: 'www.') = 1 ifTrue: [
-		secondLevelDomain := secondLevelDomain copyFrom: 5 to: secondLevelDomain size].
-	secondLevelDomain := secondLevelDomain upTo: $/.
-	secondLevelDomain := secondLevelDomain upTo: $&.
-	secondLevelDomain := secondLevelDomain upTo: $?.
+	secondLevelDomain := (((secondLevelDomain upTo: $/) upTo: $&) upTo: $?).
 	indexOfPoint := secondLevelDomain indexOf: $..
 	lastIndexOfPoint := 0.
 	[(secondLevelDomain indexOf: $. startingAt: (indexOfPoint + 1)) ~= 0]
