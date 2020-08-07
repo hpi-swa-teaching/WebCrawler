@@ -1,6 +1,7 @@
 searching
 searchSubDomainsFor: anUrl in: aCollection
 	
-	| secondLevel |
-	secondLevel := self parser extractSecondLevelDomain: anUrl.
-	^ self searchForRegex: '[^(www)]*',secondLevel,'.*' in: aCollection
+	| relevantAuthority |
+	relevantAuthority := self parser extractRelevantAuthority: anUrl.
+	^ aCollection select: [:link | 
+		(self parser extractRelevantAuthority: link) = relevantAuthority]

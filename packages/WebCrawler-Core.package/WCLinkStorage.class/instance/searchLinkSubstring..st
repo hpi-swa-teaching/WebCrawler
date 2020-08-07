@@ -1,5 +1,5 @@
 searching
 searchLinkSubstring: aString
 
-	^ self searchForRegex: '.*',(aString),'.*'.
+	^ self searchForRegex: '.*',(aString),'.*'
 	

@@ -1,4 +1,0 @@
-window
-defaultWindowHeight
-
-	^ 400

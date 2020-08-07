@@ -1,19 +1,11 @@
 creators
 toogleLoadingScreen
 	
-	| morph textMorph |
-	
+	| morph |
 	self loading 
 		ifFalse: [
-			morph := Morph new.
-			morph width: self defaultWindowWidth + 100; 
-			height: self defaultWindowHeight;
-			position: self position;
-			beTransparent.
-			textMorph := TextMorph new contents: 'loading...'.
-			textMorph fontName: 'Monaco' size: 49.
-			textMorph position: (self position + (450 @ 350)).
-			morph addMorphFront: textMorph.
+			morph := self createLoadingMorph.
+			morph addMorphFront: self createLoadingTextMorph.
 			self loadingScreen: morph.
 			self loading: true]
 		ifTrue: [

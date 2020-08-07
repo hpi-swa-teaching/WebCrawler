@@ -1,0 +1,1 @@
+This class is used for visualizing links in the SiteGraphPlugin and SiteMapPlugin

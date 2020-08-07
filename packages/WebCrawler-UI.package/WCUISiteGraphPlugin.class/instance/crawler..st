@@ -2,5 +2,6 @@ accessing
 crawler: anObject
 
 	crawler := anObject.
-	siteGraph := anObject siteGraph.
+	self siteGraph: anObject siteGraph.
 	anObject executeOnUpdate: self graphUpdate.
+	self graphUpdate value: OrderedCollection new

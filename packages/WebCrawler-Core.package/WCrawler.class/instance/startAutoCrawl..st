@@ -1,4 +1,7 @@
 autocrawling
 startAutoCrawl: aUrlString
 
-	self process: [self breadthFirstSearch: aUrlString] fork
+	self abortAutoCrawling.
+	self process: [
+		self breadthFirstSearch: aUrlString. 
+		Transcript show: 'autocrawling has ended!'] fork

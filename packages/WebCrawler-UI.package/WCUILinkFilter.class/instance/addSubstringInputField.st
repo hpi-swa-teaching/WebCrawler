@@ -2,10 +2,9 @@ creators
 addSubstringInputField
 
 	self subStringInputField: (WCURLInputBar new
-		position: self position + ((self height * 0.04) @ (self height * 0.04));
-		crAction: [self searchSubstring];
-		yourself).
-
-	self subStringInputField setBalloonText: 'enter substring here'.
+			initialize: [self searchSubstring];
+			position: self position + self defaultSubstringInputFieldPosition;
+			updateBalloonText: 'enter substring here';
+			yourself).
 	self addMorphFront: self subStringInputField.
-	self subStringInputField extent: (self width * 0.8) @ (self height * 0.075)
+	self subStringInputField extent: self defaultInputFieldSize

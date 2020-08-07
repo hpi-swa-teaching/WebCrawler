@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "PAU 8/7/2020 18:05",
 	"instvars" : [
 		"crawlButton",
 		"crawler",
@@ -12,12 +12,13 @@
 		"subStringButton",
 		"regexInputField",
 		"regexButton",
-		"secondDomainButton",
+		"relevantAuthorityButton",
 		"links",
 		"subDomainButton",
-		"outgoingDomainButton",
 		"listMorph",
-		"subStringInputField" ],
+		"subStringInputField",
+		"parentDomain",
+		"outgoingDomainsButton" ],
 	"name" : "WCUILinkFilter",
 	"pools" : [
 		 ],

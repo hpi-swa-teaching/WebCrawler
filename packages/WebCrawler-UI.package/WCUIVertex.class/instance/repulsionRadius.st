@@ -1,4 +1,0 @@
-accessing
-repulsionRadius
-
-	^ 400

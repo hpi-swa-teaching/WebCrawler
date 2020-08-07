@@ -1,19 +1,9 @@
 creators
 addOutgoingDomainsButton
 
-	| textFieldSize | 
-	textFieldSize := self regexInputField height.
-
-	self outgoingDomainsButton: (SimpleButtonMorph new
-		position: self position + ((self width * 0.01) @ (self height * 0.24)); 
-		target: [
-			Transcript show: 'outgoing Domains button clicked! ';cr.
-			self links: (self crawler storage searchOutgoingDomains).
-			self listMorph updateList: (self links)];
-		actionSelector: #value;
-		label: 'Filter Outgoing Domains' font: self smallerDefaultFont;
-		extent: 180 @ textFieldSize;
-		openInWorld;
+	self outgoingDomainsButton: (WCUIButton new initialize: 'Filter Outgoing Domains' 
+		target: [self searchOutgoing] font: self smallerDefaultFont;
+		extent: self defaultBiggerButtonExtent;
+		position: self position + self defaultOutgoingButtonPosition;
 		yourself).
-	
-	self addMorphFront: self outgoingDomainsButton.
+	self addMorphFront: self outgoingDomainsButton

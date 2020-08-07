@@ -1,19 +1,8 @@
 creators
 addAutoCrawlButton
-
-	| buttonHeight |
-	buttonHeight := 60.
-	self button: (PluggableButtonMorph new
-		position: (self plugin position x + self plugin extent x + 30) @ (self plugin position y); 
-		target: [
-			Transcript show: 'site graph button clicked'.
-			self crawler startAutoCrawl: self crawler storage links atRandom];
-		actionSelector: #value;
-		label: 'AutoCrawl' font: self defaultFont;
-		cornerStyle: #rounded;
-		cornerRadius: buttonHeight / 5;
-		openInWorld;
-		yourself).
 	
-	self button extent: self button extent x @ buttonHeight.
-	self addMorphFront: self button
+	self autoCrawlButton: (WCUIButton new initialize: 'AutoCrawl' 
+		target: self autoCrawlButtonTarget).
+	self addMorphFront: self autoCrawlButton.
+	self autoCrawlButton position: self position + self lastButtonStartPosition.
+	self lastButtonStartPosition: self lastButtonStartPosition + (0@(self autoCrawlButton extent y + self buttonPadding))

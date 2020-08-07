@@ -1,7 +1,7 @@
 parsing
 traverseDocumentTree: aHtmlEntity
 
-	(aHtmlEntity tagName = 'a' or: [aHtmlEntity tagName = 'script'])
+	(aHtmlEntity tagName = 'a')
 		ifTrue: [self evaluateLink: (aHtmlEntity getAttribute: 'href')].
 	
 	(aHtmlEntity mayContain: HtmlAnchor new)

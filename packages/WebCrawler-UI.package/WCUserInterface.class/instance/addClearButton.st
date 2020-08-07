@@ -1,21 +1,10 @@
 creators
 addClearButton
 
-	| textFieldSize | 
-	textFieldSize := self urlInputField height.
-
-	self clearButton: (PluggableButtonMorph new
-		position: self crawlButton position x @ (self crawlButton position y +( self height * 0.68)); 
+	self clearButton: (WCUIButton new initialize: 'Clear' 
 		target: [
-			Transcript show: 'clear button clicked'.
 			self crawler reset.
-			self listMorph updateList: OrderedCollection new];
-		actionSelector: #value;
-		label: 'Clear' font: self defaultFont;
-		cornerStyle: #rounded;
-		cornerRadius: textFieldSize / 5;
-		openInWorld;
-		yourself).
-	
-	self clearButton extent: self clearButton extent x @ textFieldSize.
-	self addMorphFront: self clearButton
+			self listMorph updateList: OrderedCollection new]).
+	self addMorphFront: self clearButton.
+	self clearButton position: self position + self lastButtonStartPosition.
+	self lastButtonStartPosition: self lastButtonStartPosition + (0@(self clearButton extent y + self buttonPadding))

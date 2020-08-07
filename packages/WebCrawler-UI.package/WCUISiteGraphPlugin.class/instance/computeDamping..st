@@ -1,6 +1,7 @@
 graphUpdating
 computeDamping: aPoint
 
-	| damped |
+	| damped maxDisplacement |
 	damped := aPoint * self dampingFactor.
-	^ self clamp: damped min: -20 asPoint max: 20 asPoint.
+	maxDisplacement := 20 asPoint.
+	^ self clamp: damped min: -1 * maxDisplacement max: maxDisplacement

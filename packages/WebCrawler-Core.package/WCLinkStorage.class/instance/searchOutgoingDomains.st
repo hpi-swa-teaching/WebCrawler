@@ -1,4 +1,4 @@
 searching
 searchOutgoingDomains
 
-	^ self searchForRegex: '^((?!',(self secondLevelDomains first),').)*$' in: self links
+	^ self searchForRegex: '^((?!',(self relevantAuthorities first),').)*$' in: self links

@@ -2,11 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"contents" : "PAU 6/2/2020 15:59",
+		"contents" : "PAU 8/7/2020 19:06",
+		"contents:" : "PAU 8/7/2020 12:26",
 		"crAction:" : "PAU 6/2/2020 15:49",
 		"defaultFont" : "PAU 8/5/2020 14:51",
 		"defaultInputFieldMargins" : "PAU 8/5/2020 14:53",
-		"drawBalloonTextOn:" : "PAU 8/5/2020 14:47",
-		"initialize" : "PAU 8/5/2020 14:54",
+		"defaultSize" : "PAU 8/7/2020 16:33",
+		"drawBalloonTextOn:" : "PAU 8/7/2020 19:18",
+		"initialize:" : "PAU 8/7/2020 16:35",
 		"setBalloonText:" : "js 6/4/2020 18:30",
-		"smallerDefaultFont" : "PAU 8/5/2020 14:52" } }
+		"setOwnAttributes" : "PAU 8/7/2020 16:33",
+		"setTextMorphAttributes:" : "PAU 8/7/2020 16:35",
+		"smallerDefaultFont" : "PAU 8/5/2020 14:52",
+		"updateBalloonText:" : "PAU 8/7/2020 18:12" } }
