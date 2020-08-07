@@ -1,7 +1,7 @@
 drawing
 drawBalloonTextOn: aCanvas 
 	"Show balloon text in the text morph if it has no contents."
-	textMorph contents ifNotEmpty: [ ^ self ].
+	self contents ifNotEmpty: [ ^ self ].
 	([ self balloonText ]
 		on: Error
 		do: [ : err | 'error in balloonText' ]) ifNotNil:

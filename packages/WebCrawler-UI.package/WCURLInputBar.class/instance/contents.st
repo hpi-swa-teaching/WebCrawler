@@ -1,4 +1,4 @@
 accessing
 contents
 
-	^ self textMorph contents
+	^ self textMorph contents asString
