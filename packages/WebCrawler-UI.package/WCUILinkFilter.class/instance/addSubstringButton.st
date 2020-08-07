@@ -1,18 +1,9 @@
 creators
 addSubstringButton
 
-	| textFieldSize | 
-	textFieldSize := self subStringInputField height.
-
-	self subStringButton: (SimpleButtonMorph new
-		position: self position + ((self width * 0.86) @ (self height * 0.04)); 
-		target: [
-			Transcript show: 'substring button clicked! content: ', self subStringInputField contents;cr.
-			self searchSubstring];
-		actionSelector: #value;
-		label: 'Search' font: self defaultFont;
-		extent: 80 @ textFieldSize;
-		openInWorld;
+	self subStringButton: (WCUIButton new initialize: 'Search' 
+		target: [self searchSubstring];
+		extent: self defaultButtonExtent;
+		position: self position + self defaultSubstringPosition;
 		yourself).
-	
-	self addMorphFront: self subStringButton.
+	self addMorphFront: self subStringButton

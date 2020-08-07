@@ -1,19 +1,9 @@
 creators
 addSubDomainButton
 
-	| textFieldSize | 
-	textFieldSize := self regexInputField height.
-
-	self subDomainButton: (SimpleButtonMorph new
-		position: self position + ((self width * 0.35) @ (self height * 0.24)); 
-		target: [
-			Transcript show: 'Subdomain button clicked!'; cr.
-			self links: (self crawler storage searchSubDomains).
-			self listMorph updateList: (self links)];
-		actionSelector: #value;
-		label: 'Filter Subdomains' font: self smallerDefaultFont;
-		extent: 180 @ textFieldSize;
-		openInWorld;
+	self subDomainButton: (WCUIButton new initialize: 'Filer Subdomains' 
+		target: [self searchSubDomains] font: self smallerDefaultFont;
+		extent: self defaultBiggerButtonExtent;
+		position: self position + self defaultSubDomainPosition;
 		yourself).
-	
-	self addMorphFront: self subDomainButton.
+	self addMorphFront: self subDomainButton

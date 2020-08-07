@@ -1,4 +1,0 @@
-accessing
-colorText
-	
-	^ colorText

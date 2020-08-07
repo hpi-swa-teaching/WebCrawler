@@ -8,8 +8,8 @@
 		"testFilterUniqueUrls" : "PAU 6/23/2020 16:20",
 		"testSearchForRegex" : "js 8/6/2020 19:50",
 		"testSearchLinkSubstring" : "js 8/6/2020 20:05",
-		"testSearchOutgoingDomains" : "js 8/6/2020 20:03",
-		"testSearchSubDomains" : "js 8/6/2020 20:07",
+		"testSearchOutgoingDomains" : "PAU 8/7/2020 15:39",
+		"testSearchSubDomains" : "PAU 8/7/2020 15:39",
 		"testStoreSource" : "PAU 6/23/2020 16:20",
 		"testSubstituteRelativeUrls" : "PAU 6/23/2020 16:21",
-		"testUpdateSecondLevelDomains" : "js 8/6/2020 19:43" } }
+		"testUpdateSecondLevelDomains" : "PAU 8/7/2020 15:42" } }

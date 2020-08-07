@@ -10,11 +10,11 @@
 		"siteMap",
 		"links",
 		"utf8Dictionary",
-		"secondLevelDomains",
+		"relevantAuthorities",
 		"options",
 		"newLinks",
 		"bloomFilter",
-		"secondLevelDomainDictionary",
+		"relevantAuthorityDictionary",
 		"parser" ],
 	"name" : "WCLinkStorage",
 	"pools" : [

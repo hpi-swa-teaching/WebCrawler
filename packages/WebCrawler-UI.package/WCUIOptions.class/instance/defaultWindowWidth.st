@@ -1,4 +1,0 @@
-window
-defaultWindowWidth
-
-	^ 500

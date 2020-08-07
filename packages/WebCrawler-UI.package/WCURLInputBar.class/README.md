@@ -1,0 +1,1 @@
+This class contains all default settings for an url input bar

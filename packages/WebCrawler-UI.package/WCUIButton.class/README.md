@@ -1,0 +1,1 @@
+this class contains all default settings for the buttons we use in our uis.

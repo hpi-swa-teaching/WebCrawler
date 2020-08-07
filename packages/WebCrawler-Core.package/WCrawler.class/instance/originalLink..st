@@ -1,4 +1,4 @@
 accessing
 originalLink: anUrl
 
-	^ self storage secondLevelDomainDictionary at: anUrl ifAbsent: [anUrl]
+	^ self storage relevantAuthorityDictionary at: anUrl ifAbsent: [anUrl]

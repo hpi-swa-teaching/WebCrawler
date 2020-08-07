@@ -4,4 +4,6 @@
 	"instance" : {
 		"defaultFont" : "PAU 8/6/2020 12:58",
 		"defaultSize" : "PAU 8/6/2020 12:50",
-		"initialize:target:" : "PAU 8/6/2020 12:50" } }
+		"initialize:target:" : "PAU 8/6/2020 12:50",
+		"initialize:target:font:" : "PAU 8/7/2020 17:38",
+		"smallerDefaultFont" : "PAU 8/7/2020 17:37" } }

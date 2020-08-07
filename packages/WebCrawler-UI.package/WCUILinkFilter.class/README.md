@@ -1,0 +1,1 @@
+this class is the ui for filtering the crawling results

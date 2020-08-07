@@ -1,4 +1,4 @@
 accessing
 outgoingDomainsButton
 
-	^ outgoingDomainButton 
+	^ outgoingDomainsButton 

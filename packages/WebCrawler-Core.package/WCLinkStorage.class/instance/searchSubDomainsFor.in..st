@@ -1,7 +1,7 @@
 searching
 searchSubDomainsFor: anUrl in: aCollection
 	
-	| secondLevel |
-	secondLevel := self parser extractRelevantAuthority: anUrl.
+	| relevantAuthority |
+	relevantAuthority := self parser extractRelevantAuthority: anUrl.
 	^ aCollection select: [:link | 
-		(self parser extractRelevantAuthority: link) = secondLevel]
+		(self parser extractRelevantAuthority: link) = relevantAuthority]

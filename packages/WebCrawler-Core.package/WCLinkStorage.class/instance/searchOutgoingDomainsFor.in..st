@@ -2,6 +2,7 @@ searching
 searchOutgoingDomainsFor: anUrl in: aCollection
 
 	
-	| secondLevel |
-	secondLevel := self parser extractRelevantAuthority: anUrl.
-	^ self searchForRegex: '^((?!',secondLevel,').)*$' in: aCollection
+	| relevantAuthority |
+	relevantAuthority := self parser extractRelevantAuthority: anUrl.
+	"^ self searchForRegex: '^((?!',relevantAuthority,').)*$' in: aCollection"
+	^ aCollection reject: [:link | (self parser extractRelevantAuthority: link) = relevantAuthority]

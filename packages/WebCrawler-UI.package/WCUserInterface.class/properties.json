@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "jul 5/11/2020 19:05",
 	"instvars" : [
-		"modell",
 		"urlInputField",
 		"crawlButton",
 		"crawler",
-		"options",
 		"uiLinkFilter",
 		"filterButton",
 		"listMorph",
@@ -20,7 +18,8 @@
 		"graphButton",
 		"uiSiteGraph",
 		"mapButton",
-		"uiSiteMap" ],
+		"uiSiteMap",
+		"lastButtonStartPosition" ],
 	"name" : "WCUserInterface",
 	"pools" : [
 		 ],

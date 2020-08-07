@@ -1,4 +1,4 @@
 accessing
 defaultWindowHeight
 
-	^ 400
+	^ 500
