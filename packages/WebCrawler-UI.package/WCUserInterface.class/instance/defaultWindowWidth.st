@@ -1,4 +1,4 @@
 accessing
 defaultWindowWidth
 
-	^ 500
+	^ 630

@@ -1,4 +1,4 @@
 autocrawling
 abortAutoCrawling
 
-	self process terminate
+	self process isNil ifFalse: [self process terminate]

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"abortAutoCrawling" : "PAU 7/20/2020 14:03",
+		"abortAutoCrawling" : "PAU 8/7/2020 21:26",
 		"addNewLinksToQueue:" : "PAU 8/7/2020 12:41",
 		"adjustOptions" : "PAU 8/7/2020 12:35",
 		"asyncCrawl:" : "PAU 6/18/2020 07:49",
@@ -32,7 +32,7 @@
 		"reset" : "PAU 8/7/2020 14:03",
 		"resumeAutoCrawl" : "PAU 8/7/2020 09:28",
 		"robotsTXTPermits:" : "PAU 8/7/2020 15:27",
-		"scanRobotEntries:" : "PAU 8/7/2020 21:12",
+		"scanRobotEntries:" : "PAU 8/7/2020 21:26",
 		"selectMostRelevantLinks:" : "PAU 8/7/2020 13:38",
 		"setOwnAttributes" : "PAU 8/7/2020 13:42",
 		"siteGraph" : "PAU 8/5/2020 21:13",
