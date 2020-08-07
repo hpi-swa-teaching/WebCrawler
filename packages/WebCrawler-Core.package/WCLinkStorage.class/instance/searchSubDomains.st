@@ -1,4 +1,4 @@
 searching
 searchSubDomains
 	
-	    ^ self searchForRegex: '[^(www)]*',(self secondLevelDomains first),'.*'
+	^ self searchSubDomainsFor: self secondLevelDomains first in: self links

@@ -3,17 +3,10 @@ processLinks: anOrderedCollection parent: aParentUrlString
 
 	| processedLinks |
 	processedLinks := anOrderedCollection.
-	
 	self options substituteRelativeUrls
-		ifTrue: [
-			processedLinks := self substituteRelativeUrls: processedLinks parent: aParentUrlString].
-	
+		ifTrue: [processedLinks := self substituteRelativeUrls: processedLinks parent: aParentUrlString].
 	self options beautifyLinks
-		ifTrue: [
-			processedLinks := self beautifyLinks: processedLinks].
-		
+		ifTrue: [processedLinks := self beautifyLinks: processedLinks].	
 	self options storeUniqueUrls
-		ifTrue: [
-			processedLinks := self filterUniqueUrls: processedLinks].
-		
+		ifTrue: [processedLinks := self filterUniqueUrls: processedLinks].
 	^ processedLinks

@@ -1,4 +1,0 @@
-accessing
-linkCounter
-
-	^ linkCounter

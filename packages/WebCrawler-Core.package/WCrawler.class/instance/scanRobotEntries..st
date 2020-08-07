@@ -1,15 +1,11 @@
 crawling
 scanRobotEntries: aRobotContentString
 
-	| robotLines foundMatchingUserAgent |
-	robotLines := aRobotContentString findTokens: String cr.
-	foundMatchingUserAgent := false.
-	robotLines do: [:line |
-		line = 'User-agent: *'
-			ifTrue: [foundMatchingUserAgent := true]
-			ifFalse: [
-				(foundMatchingUserAgent and: [line = 'Disallow: /'])
-					ifTrue: [^ false].
-				(foundMatchingUserAgent and: [line matchesRegex: '^User-agent.*'])
-					ifTrue: [foundMatchingUserAgent := false]]].
-	^ true
+	| disallowingRule matchingUA nextMatchingUA |
+	matchingUA := aRobotContentString 
+		findString: ('User-agent: *', String cr).
+	nextMatchingUA := aRobotContentString 
+		findString: 'User-agent' startingAt: (matchingUA + 1).
+	disallowingRule := aRobotContentString 
+		findString: ('Disallow: /', String cr) startingAt: (matchingUA + 1).
+	^ matchingUA = 0 or: [(disallowingRule < nextMatchingUA) not]
